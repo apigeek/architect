@@ -90,7 +90,7 @@ By default, ApiGeek Architect looks in the "./features" sub-directory. It will c
 
 However, It won't do much else until we provide some feature scenarios.
 
-Now, create a file called ./features/example.feature with a simple text editor. 
+Now, create a file called ./features/my-first.feature with a simple text editor. 
 
 Paste the Feature Example from above, then run 'apigeek' again:
 
@@ -98,11 +98,13 @@ Paste the Feature Example from above, then run 'apigeek' again:
 
 Next, let's enable ApiGeek Architect's built-in [Dialect](https://github.com/apigeek/architect) debugger
 
-	export DEBUG=dialect*
+	$ export DEBUG=dialect*
+	$ apigeek
 
-Turn it off again:
+To turn it off again, type:
 
-	export DEBUG=dialect*
+	$ export DEBUG=
+	$ apigeek
 
 I want to organise features into folders
 ========================================
@@ -154,20 +156,6 @@ Let's expand our initial example, into a hypothetical scenario.
         Then I assert this.name == "story"
 
 Architect reads the GIVEN | WHEN | THEN sentences to build up a feature suite that initializes, executes features and make assertions.
-
-I want to combine Stories into Epics
-=====================================
-
-A group of related scenarios is called a "feature" Epic. An Epic is identified by the ".feature" file extension.
-
-For example: the "hello world.feature" file might look like this:
-
-	Feature: Verify that variables are working
-	
-	  Scenario: Test Variable Assignment
-	
-	    Given I set hello to world
-	    Then variable hello should match world
 
 I want to re-use feature across multiple projects
 =================================================
