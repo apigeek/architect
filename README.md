@@ -112,7 +112,7 @@ I want to learn more about Architect
 
 [Example Features](features/). 
 
-[Basic Gherkin](docs/vocab.md). 
+[Gherkin Dialect](docs/vocab.md). 
 
 [Advanced Gherkin](docs/advanced.md). 
 
