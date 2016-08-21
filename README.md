@@ -100,7 +100,7 @@ Paste the Feature Example from above.
 
 For more options, type:
 
-	$ apigeek  -v
+	$ apigeek  -h
 
 For example: 
 
