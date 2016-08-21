@@ -105,33 +105,24 @@ For example:
 If your features are in a different location then use the "--features" or "--epics" option to locate them. 
 These folders are not automatically created, they return an error if not found.
 
+I want to learn more about Dialect
+=================================
 
-I want to extend Dialect's vocabulary
-=====================================
+[Gherkin Dialect](../dialect/docs/vocab.md). 
 
-Dialect ships with only a few simple phrases in it's vocabluary.
+[Basic Vocabulary](docs/vocab.md). 
 
-Additonal vocabluaries can be easily added. 
+[Web API Vocabulary](../dialect-webapi/README.md). 
 
-For using and testing RESTful web APIs
+[Web Apps Vocabulary](../dialect-webapp/README.md). 
 
-	npm install apigeek-dialect-webapi -g
+[Network Vocabulary](../dialect-net/README.md). 
 
-For using and testing browser-based UIs
+[Software Blueprints](../dialect-blueprint/README.md). 
 
-	npm install apigeek-dialect-webapp -g
+[Advanced Gherkin](../dialect/docs/advanced.md). 
 
-For testing network connectivity
-
-	npm install apigeek-dialect-net -g
-
-For building software
-
-	npm install apigeek-dialect-blueprint -g
-
-Then, in your feature files declare the vocabularies you need:
-
-	@dialects=webapi,webapp,net,blueprint
+[Something Went Wrong](../dialect/docs/errors.md). 
 
 I want to capture my Stories
 ============================
@@ -206,25 +197,6 @@ I want to add comments
 Simple, place a # before any line and it will be ignored by Dialect.
 
 It's useful to add detailed instructions about your intentions or to prevent a statement from running, for example during development.
-
-I want to learn more about Dialect
-=================================
-
-[Gherkin Dialect](../dialect/docs/vocab.md). 
-
-[Basic Vocabulary](docs/vocab.md). 
-
-[Web API Vocabulary](../dialect-webapi/README.md). 
-
-[Web Apps Vocabulary](../dialect-webapp/README.md). 
-
-[Network Vocabulary](../dialect-net/README.md). 
-
-[Software Blueprints](../dialect-blueprint/README.md). 
-
-[Advanced Gherkin](../dialect/docs/advanced.md). 
-
-[Something Went Wrong](../dialect/docs/errors.md). 
 
 I want to license apigeek-dialect
 =================================
