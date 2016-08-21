@@ -112,9 +112,9 @@ I want to learn more about Architect
 
 [Example Features](features/). 
 
-[Gherkin Dialect](docs/vocab.md). 
+[Basic Dialect](docs/vocab.md). 
 
-[Advanced Gherkin](docs/advanced.md). 
+[Advanced Dialect](docs/advanced.md). 
 
 [Something Went Wrong](docs/errors.md). 
 
