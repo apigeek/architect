@@ -10,5 +10,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "architect@apigeek.me",
-  "license": "ISC"
+  "license": "ISC",
+  "bin": {
+    "apigeek": "lib/index.js"
+  },
+  "dependencies": {
+    "apigeek-dialect": "^0.9.1"
+  }
 }
