@@ -1,6 +1,6 @@
 {
   "name": "apigeek-architect",
-  "version": "0.8.5",
+  "version": "0.8.6",
   "description": "Executable English for Enterprise Architecture",
   "main": "lib/index.js",
   "directories": {
@@ -23,6 +23,6 @@
     "apigeek": "lib/index.js"
   },
   "dependencies": {
-    "apigeek-dialect": "^0.9.1"
+    "apigeek-dialect": "^0.9.3"
   }
 }

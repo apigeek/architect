@@ -8,7 +8,7 @@ You write executable Features (Epics and Stories) that can be easily re-used acr
 
 Your features are written in "natural language" so every stakeholder (including the CIO :-) can make sense of them.
 
-[Download a PDF overview](docs/Automating API Governance.pdf). 
+[View the PDF introduction](docs/Intro.pdf). 
 
 
 I want to automate myself
