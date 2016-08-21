@@ -1,6 +1,6 @@
 
-An Executable English for Software Architects
-=============================================
+Executable English for Software Architects
+==========================================
 
 Architect is a Business Driven Development (BDD) tool for architecting, deploying and governing software systems.
 
@@ -8,7 +8,9 @@ You write executable Features (Epics and Stories) that can be easily re-used acr
 
 Your features are written in "natural language" so every stakeholder (including the CIO :-) can make sense of them.
 
-Download an Overview PDF
+[Download a PDF overview](docs/Automating API Governance.pdf). 
+
+
 I want to automate myself
 =========================
 
