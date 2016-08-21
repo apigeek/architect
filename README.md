@@ -110,19 +110,21 @@ These folders are not automatically created, they return an error if not found.
 I want to learn more about Architect
 =================================
 
-[Basic Vocabulary](docs/vocab.md). 
+[Example Features](features/). 
 
-[Web API Vocabulary](../dialect-webapi/README.md). 
-
-[Web Apps Vocabulary](../dialect-webapp/README.md). 
-
-[Network Vocabulary](../dialect-net/README.md). 
-
-[Software Blueprints](../dialect-blueprint/README.md). 
+[Basic Gherkin](docs/vocab.md). 
 
 [Advanced Gherkin](docs/advanced.md). 
 
 [Something Went Wrong](docs/errors.md). 
+
+[Web API Vocabulary](/apigeek/dialect-webapi/). 
+
+[Web Apps Vocabulary](/apigeek/dialect-webapp/). 
+
+[Network Vocabulary](/apigeek/dialect-net/). 
+
+[Software Blueprints](/apigeek/dialect-blueprint/). 
 
 I want to capture my Stories
 ============================
