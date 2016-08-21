@@ -108,8 +108,6 @@ These folders are not automatically created, they return an error if not found.
 I want to learn more about Dialect
 =================================
 
-[Gherkin Dialect](../dialect/docs/vocab.md). 
-
 [Basic Vocabulary](docs/vocab.md). 
 
 [Web API Vocabulary](../dialect-webapi/README.md). 
@@ -120,9 +118,9 @@ I want to learn more about Dialect
 
 [Software Blueprints](../dialect-blueprint/README.md). 
 
-[Advanced Gherkin](../dialect/docs/advanced.md). 
+[Advanced Gherkin](docs/advanced.md). 
 
-[Something Went Wrong](../dialect/docs/errors.md). 
+[Something Went Wrong](docs/errors.md). 
 
 I want to capture my Stories
 ============================

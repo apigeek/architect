@@ -1,4 +1,4 @@
-AFFIRM BDD DIALECT
+Apigeek Dialect
 ==================
 
 Effective BDD is largely facilitated through the use of a simple domain-specific language (DSL) using English-like sentences.
@@ -8,6 +8,10 @@ Each statement describes a simple, atomic, action - optionally it may specify on
 The DSL is natural, but it must follow a precise format that matches the templates shown below.
 
 New vocabulary can be added quite easily to the Affirm core.
+
+The examples require the Web API Dialect, using the @dialects annotation.
+
+	@dialects=webapi
 
 GIVEN
 =====
