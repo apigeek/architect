@@ -76,7 +76,7 @@ I want to test-drive Architect
 
 ApiGeek Architect is built using NodeJS. If you're new to node, pre-read [Getting Started](https://www.npmjs.com/package/ApiGeek-dialect/tutorial).
 
-You install Architect  as a system-wide CLI command:
+You install ApiGeek Architect as a system-wide CLI command:
 
 	$ npm install apigeek-architect -g
 
@@ -84,11 +84,11 @@ To run it simply type:
 
 	$ apigeek
 
-By default, dialect looks in the "./features" sub-directory. It will create the folder, if it's not found.
+By default, ApiGeek Architect looks in the "./features" sub-directory. It will create the folder, if it's not found.
 
 However, It won't do much else until we provide some feature scenarios.
 
-First, let's enable Architect's built-in [Dialect](https://github.com/apigeek/architect) debugger
+First, let's enable ApiGeek Architect's built-in [Dialect](https://github.com/apigeek/architect) debugger
 
 	export DEBUG=dialect*
 
@@ -172,7 +172,7 @@ In this way, your BDD features are neatly abstracted from your runtime configura
 
 To specify a custom configuration, use:
 
-	dialect --config config.json
+	$ apigeek --config config.json
 
 If you omit the --config option, then the "ApiGeek.json" file in the current folder will be used.
 
@@ -196,12 +196,12 @@ Simple, place a # before any line and it will be ignored by Architect.
 
 It's useful to add detailed instructions about your intentions or to prevent a statement from running, for example during development.
 
-I want to license ApiGeek-dialect
-=================================
+I want to license ApiGeek-Architect
+===================================
 
 This software is licensed under the Apache 2 license, quoted below.
 
-Copyright 2016 Lee Curtis <lcurtis@ApiGeek.me>
+Copyright 2014-2016 Lee Curtis <architect@ApiGeek.me>
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not
 use this file except in compliance with the License. You may obtain a copy of
