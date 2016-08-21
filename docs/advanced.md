@@ -1,7 +1,38 @@
+Advanced Dialect
+================
+
 I want to work JSON
 =======================
 
-Affirm supports both JSON-path and XML-path when plucking values from complex data objects.
+ApiGeek's Dialect supports JSON and CSV files for complex data objects.
+
+  Scenario: Test CSV sample
+
+    Given some CSV as test:
+    <pre>
+  --------
+  what, who
+  hello, world
+  greetings, earthling
+  --------
+    </pre>
+
+The following example creates a JSON data structure from the supplied CSV. 
+
+	[
+		{ "what": "hello", "who": "world" },
+		{ "what": "greetings", "who": "earthling" }
+	]
+
+Object Path Matching
+====================
+
+ApiGeek's Dialect supports both JSON and XML path expression.
+
+    Then $.[0].what in test should match hello
+    And $.[0].who in test should match world
+    And $.[1].what in test should match greetings
+    And $.[1].who in test should match earthling
 
   Scenario: Test CSV sample
 
@@ -30,8 +61,8 @@ There are many XPATH tutorials, for example: http://archive.oreilly.com/pub/a/pe
 
 A similar approach is used to test XPATH expressions.
 
-I want In-line Javascript
-=========================
+In-line Javascript
+==================
 
 Several statements support arbitrary Javascript, for example: "I return" and "I assert".
 
@@ -46,8 +77,8 @@ The javscript is executed in the current context - which means that the function
     THEN I assert this.response.statusCode!=500
 
 
-I want complex data structures
-==============================
+Complex data structures
+=======================
 
   Scenario: Set & Test JSON sample
 
@@ -60,6 +91,7 @@ I want complex data structures
     And earth.moon in some-variable should match cheese
     And I assert this.features.var['some-variable'].hello=="world"
     And I assert this.request.headers['Content-Type']=="application/json"
+
 
 I want to be notified when Stories and Epics succeed or fail
 ============================================================
