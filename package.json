@@ -1,6 +1,6 @@
 {
   "name": "apigeek-architect",
-  "version": "0.8.3",
+  "version": "0.8.4",
   "description": "Executable English for Enterprise Architecture",
   "main": "lib/index.js",
   "directories": {
@@ -9,14 +9,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-	"bugs": {
-		"url": "https://github.com/apigeek/project/issues",
-		"email": "architect@apigeek.me"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/apigeek/architect.git"
-	},
+  "bugs": {
+    "url": "https://github.com/apigeek/project/issues",
+    "email": "architect@apigeek.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apigeek/architect.git"
+  },
   "author": "architect@apigeek.me",
   "license": "ISC",
   "bin": {
