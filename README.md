@@ -2,7 +2,7 @@
 An Executable English for Software Architects
 =============================================
 
-Dialect is a Business Driven Development (BDD) tool for architecting, deploying and governing software systems.
+Architect is a Business Driven Development (BDD) tool for architecting, deploying and governing software systems.
 
 You write executable Features (Epics and Stories) that can be easily re-used across different projects.
 
@@ -12,9 +12,9 @@ Download an Overview PDF
 I want to automate myself
 =========================
 
-Apigeek-Architect is an automation tool for software architects. 
+ApiGeek-Architect is an automation tool for software architects. 
 
-You write your process and governance and Dialect takes care of the rest.
+You write your process and governance and Architect takes care of the rest.
 
 A scenario describes the expected behavior and outcomes in a way that is both human and machine friendly.
 
@@ -46,11 +46,11 @@ You can download pre-packaged vocabularies and/or roll your own with simple Java
 I want to see an example
 ========================
 
-Dialect features are collections of scenarios.
+Architect features are collections of scenarios.
 
 To improve readability, the keyword AND can be used instead in place of the verbs above.
 
-You can influence what Dialect understands using @dialect annotations.
+You can influence what Architect understands using @dialect annotations.
 
 	@dialects=webapi
 	Feature: Verify that Google is accessible
@@ -71,24 +71,24 @@ You can influence what Dialect understands using @dialect annotations.
 	    When I GET http://google.com
 	    Then response code should be 302
 
-I want to test-drive Dialect
-============================
+I want to test-drive Architect
+==============================
 
-Apigeek Dialect is built using NodeJS. If you're new to node, pre-read [Getting Started](https://www.npmjs.com/package/apigeek-dialect/tutorial).
+ApiGeek Architect is built using NodeJS. If you're new to node, pre-read [Getting Started](https://www.npmjs.com/package/ApiGeek-dialect/tutorial).
 
-You install Dialect  as a system-wide CLI command:
+You install Architect  as a system-wide CLI command:
 
-	$ npm install apigeek-dialect -g
+	$ npm install apigeek-architect -g
 
 To run it simply type:
 
-	$ dialect
+	$ apigeek
 
 By default, dialect looks in the "./features" sub-directory. It will create the folder, if it's not found.
 
 However, It won't do much else until we provide some feature scenarios.
 
-First, let's enable Dialect's built-in debugger
+First, let's enable Architect's built-in [Dialect](https://github.com/apigeek/architect) debugger
 
 	export DEBUG=dialect*
 
@@ -98,14 +98,14 @@ Paste the Feature Example from above.
 
 For more options, type:
 
-	$ dialect -v
+	$ apigeek  -v
 
 For example: 
 
 If your features are in a different location then use the "--features" or "--epics" option to locate them. 
 These folders are not automatically created, they return an error if not found.
 
-I want to learn more about Dialect
+I want to learn more about Architect
 =================================
 
 [Basic Vocabulary](docs/vocab.md). 
@@ -139,7 +139,7 @@ Let's expand our initial example, into a hypothetical scenario.
         And error feature story works
         Then I assert this.name == "story"
 
-Dialect reads the GIVEN | WHEN | THEN sentences to build up a feature suite that initializes, executes features and make assertions.
+Architect reads the GIVEN | WHEN | THEN sentences to build up a feature suite that initializes, executes features and make assertions.
 
 I want to combine Stories into Epics
 =====================================
@@ -158,11 +158,11 @@ For example: the "hello world.feature" file might look like this:
 I want to re-use feature across multiple projects
 =================================================
 
-Apigeek-Dialect was designed to support a declarative style so that features are portable between dev, feature and production environments. 
+ApiGeek-Architect was designed to support a declarative style so that features are portable between dev, feature and production environments. 
 
 To achieve portability, environment-specific properties can be declared in a "config" file.
 
-By default, dialect will try to load a configuration file called "apigeek.json" from your current directory. 
+By default, dialect will try to load a configuration file called "ApiGeek.json" from your current directory. 
 
 If no file is found, then sensible default values are defined.
 
@@ -174,7 +174,7 @@ To specify a custom configuration, use:
 
 	dialect --config config.json
 
-If you omit the --config option, then the "apigeek.json" file in the current folder will be used.
+If you omit the --config option, then the "ApiGeek.json" file in the current folder will be used.
 
 Supplying a different "config" file for each environment allows Feature features to be re-used across multiple environments.
 
@@ -192,16 +192,16 @@ Backgrounds are similar to scenarios, except they do not support annotations.
 I want to add comments
 ======================
 
-Simple, place a # before any line and it will be ignored by Dialect.
+Simple, place a # before any line and it will be ignored by Architect.
 
 It's useful to add detailed instructions about your intentions or to prevent a statement from running, for example during development.
 
-I want to license apigeek-dialect
+I want to license ApiGeek-dialect
 =================================
 
 This software is licensed under the Apache 2 license, quoted below.
 
-Copyright 2016 Lee Curtis <lcurtis@apigeek.me>
+Copyright 2016 Lee Curtis <lcurtis@ApiGeek.me>
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not
 use this file except in compliance with the License. You may obtain a copy of
