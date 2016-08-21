@@ -90,25 +90,35 @@ By default, ApiGeek Architect looks in the "./features" sub-directory. It will c
 
 However, It won't do much else until we provide some feature scenarios.
 
-First, let's enable ApiGeek Architect's built-in [Dialect](https://github.com/apigeek/architect) debugger
+Now, create a file called ./features/example.feature with a simple text editor. 
+
+Paste the Feature Example from above, then run 'apigeek' again:
+
+	$ apigeek
+
+Next, let's enable ApiGeek Architect's built-in [Dialect](https://github.com/apigeek/architect) debugger
 
 	export DEBUG=dialect*
 
-Now, create a file called ./features/example.feature with a simple text editor. 
+Turn it off again:
 
-Paste the Feature Example from above.
+	export DEBUG=dialect*
 
-For more options, type:
-
-	$ apigeek  -h
-
-For example: 
+I want to organise features into folders
+========================================
 
 If your features are in a different location then use the "--features" or "--epics" option to locate them. 
+
 These folders are not automatically created, they return an error if not found.
 
 I want to learn more about Architect
-=================================
+====================================
+
+For runtime options, type:
+
+	$ apigeek  -h
+
+For more information:
 
 [Example Features](features/). 
 
