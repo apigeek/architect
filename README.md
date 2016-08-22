@@ -26,6 +26,9 @@ The scenarios contain executable english instructions - related instructions are
 I want to use natural language
 ==============================
 
+ApiGeek-Architect understands english language statements to build up a suite of features that executes your intentions.
+
+
 The BDD notation for a scenario is:
 
 	Scenario: an example
@@ -36,20 +39,17 @@ The BDD notation for a scenario is:
 The text following the keyword (GIVEN | WHEN | THEN) needs to match a phrase/pattern from a vocabulary.
 
 This BDD notation is called "Gherkin". 
+
 Gherkin is human and machine readable - business analysts, featureers, developers and robots can collaborate.
 
-New features can be created using any simple text editor.
-
-They are invoked elegantly from an API, the command line, Mocha, your IDE or your DevOps workflow.
-
-The results are nicely formatted to help debug, showcase and socialise.
+New features can be created using any simple text editor and re-use ApiGeek Architect's extensible instruction set.
 
 You can download pre-packaged vocabularies and/or roll your own with simple Javascript.
 
 I want to see a working example
 ===============================
 
-Architect features are collections of scenarios.
+Architect features are collections of scenarios. 
 
 To improve readability, the keyword AND can be used instead in place of the verbs above.
 
@@ -97,7 +97,9 @@ Paste the Feature Example from above, then run 'apigeek' again:
 
 	$ apigeek
 
-Next, let's enable ApiGeek-Architect's built-in [Dialect](https://github.com/apigeek/architect) debugger
+Next, let's enable ApiGeek-Architect's built-in [Dialect](https://github.com/apigeek/architect) debugger.
+
+The output is nicely formatted to help design, debug, showcase and socialise.
 
 	$ export DEBUG=dialect*
 	$ apigeek
@@ -107,6 +109,9 @@ To turn it off again, type:
 	$ export DEBUG=
 	$ apigeek
 
+ApiGeek-Architect can be invoked elegantly from an API, the command line, Mocha, your IDE or your DevOps workflow.
+
+
 I want to organise my work into folders
 =======================================
 
@@ -115,6 +120,25 @@ If your features are in a different location then use the "--features" or "--epi
 	$ apigeek --verbose --archive ./my--archive --config ./my-context.json --features ./my-features
 
 These folders are not automatically created, they return an error if not found.
+
+I want to test that my stories worked
+=====================================
+
+A scenario describes a Story - essentially it's a list of instructions and expectations.
+
+The framework interprets each step in the scenario using one or more [Dialects](docs/vocab.md). 
+
+Let's create a trivial example of a hypothetical test case.
+
+	Scenario: Trivial Test
+
+        Given I am testing a story
+        When debug feature story works
+        And log feature story works
+        And error feature story works
+        Then I assert this.name == "story"
+		And I succeed
+
 
 I want to learn more about Architect
 ====================================
@@ -140,25 +164,6 @@ For more information:
 [Network Dialect](/apigeek/dialect-net/). 
 
 [Software Blueprint Dialect](/apigeek/dialect-blueprint/). 
-
-I want to test capture my stories worked
-========================================
-
-A scenario describes a Story - essentially it's a list of instructions and expectations.
-
-The framework interprets each step in the scenario using the [Gherkin Vocabulary](docs/vocab.md). 
-
-Let's expand our initial example, into a hypothetical scenario. 
-
-	Scenario: Trivial Test
-
-        Given I am testing a story
-        When debug feature story works
-        And log feature story works
-        And error feature story works
-        Then I assert this.name == "story"
-
-Architect reads the GIVEN | WHEN | THEN sentences to build up a feature suite that initializes, executes features and make assertions.
 
 I want to re-use feature across multiple projects
 =================================================
