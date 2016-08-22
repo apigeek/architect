@@ -4,8 +4,6 @@ Executable English for Software Architects
 
 ApiGeek-Architect is an automation and orchestration tool for software architects. 
 
-You can write executable features (Epics and Stories) that can be easily re-used across different projects.
-
 We favour a Business Driven Development (BDD) approach to designing, deploying and governing software systems.
 
 - Simplify
@@ -19,13 +17,17 @@ Since features are written in english every stakeholder (including the CIO :-) c
 I want to automate myself
 =========================
 
-You write your process and governance requirements in simplified english. ApiGeek-Architect takes care of the rest.
+You write your process and governance requirements in simplified english. 
 
 A feature (or epic) is used to collect together related stories / scenarios.
+
+Your features (Epics and Stories) can be easily re-used across different projects.
 
 The scenarios contain executable english instructions - related instructions are packaged as dialects.
 
 Each scenario describes the expected context, actions and outcomes in a way that is both human and machine friendly.
+
+ApiGeek-Architect takes care of the rest.
 
 I want to use natural language
 ==============================
