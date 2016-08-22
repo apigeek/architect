@@ -2,13 +2,17 @@
 Executable English for Software Architects
 ==========================================
 
-ApiGeek-Architect is an automation tool for software architects. 
+ApiGeek-Architect is an automation and orchestration tool for software architects. 
 
-ApiGeek-Architect is a Business Driven Development (BDD) tool for designing, deploying and governing software systems.
+ApiGeek-Architect uses a Business Driven Development (BDD) approach to designing, deploying and governing software systems.
 
-You write executable Features (Epics and Stories) that can be easily re-used across different projects.
+You write executable features (Epics and Stories) that can be easily re-used across different projects.
 
-Your features are written in "natural language" so every stakeholder (including the CIO :-) can make sense of them.
+Since features are written in "natural language" every stakeholder (including the CIO :-) can make sense of them.
+
+. Simplify
+. Standardise
+. Socialise
 
 [View the PDF introduction](docs/Intro.pdf). 
 
@@ -162,8 +166,8 @@ If your features are in a different location then use the "--features" or "--epi
 
 These folders are not automatically created, they return an error if they're not found.
 
-I want to re-use feature across multiple projects
-=================================================
+I want to re-use my features in other projects
+==============================================
 
 ApiGeek-Architect was designed to support a declarative style so that features are portable. 
 
@@ -187,8 +191,8 @@ By default, ApiGeek-Architect will try to load a configuration file called "apig
 
 If no file is found, then sensible default values are defined.
 
-I want to perform operations before every scenario
-==================================================
+I want to do something before every scenario
+=============================================
 
 Backgrounds are similar to scenarios, except they do not support annotations.
 
@@ -214,6 +218,17 @@ Simple, place a # before any line and it will be ignored by Architect.
 		Given I am using comments
 		# Then I fail
 		Then I succeed
+
+I want to automate everything
+=============================
+
+That is our goal. We'll continue to create new Dialects that address solution areas. 
+
+Blueprints are bundles of templates and files that capture the patterns used to build valuable artefacts.
+
+Software engineers can create websites, portals, Apps, APIs, mock servers, micro services and more.
+
+ApiGeek-Architect can orchestrate them all.
 
 I want to license ApiGeek-Architect
 ===================================
