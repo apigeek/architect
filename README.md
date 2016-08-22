@@ -132,13 +132,13 @@ For more information:
 
 [Something Went Wrong](docs/errors.md). 
 
-[Web API Vocabulary](/apigeek/dialect-webapi/). 
+[Web API Dialect](/apigeek/dialect-webapi/). 
 
-[Web Apps Vocabulary](/apigeek/dialect-webapp/). 
+[Web Apps Dialect](/apigeek/dialect-webapp/). 
 
-[Network Vocabulary](/apigeek/dialect-net/). 
+[Network Dialect](/apigeek/dialect-net/). 
 
-[Software Blueprints](/apigeek/dialect-blueprint/). 
+[Software Blueprint Dialect](/apigeek/dialect-blueprint/). 
 
 I want to capture my Stories
 ============================
