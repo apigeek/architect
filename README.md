@@ -222,13 +222,13 @@ Simple, place a # before any line and it will be ignored by Architect.
 I want to automate everything
 =============================
 
-That is our goal. We'll continue to create new Dialects that address the needs of Enterprise Architects. 
+That is our goal too. We'll continue to address the needs of Enterprise Architects.
 
 Competent software engineers can easily create "blueprints" that capture the patterns, templates and files used to build SDLC artefacts.
 
-Then ApiGeek-Architect re-uses the blueprints to build customised websites, portals, Apps, APIs, mock servers, micro services and more.
+Please share any custom Blueprints and Dialects so that ApiGeek-Architect becomes more useful for all of us.
 
-Please share your custom Blueprints and Dialects so that ApiGeek-Architect becomes more useful for all of us.
+Then ApiGeek-Architect can re-use those blueprints to build customised websites, portals, Apps, APIs, mock servers, micro services and more.
 
 I want to license ApiGeek-Architect
 ===================================
