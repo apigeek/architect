@@ -4,15 +4,15 @@ Executable English for Software Architects
 
 ApiGeek-Architect is an automation and orchestration tool for software architects. 
 
-ApiGeek-Architect uses a Business Driven Development (BDD) approach to designing, deploying and governing software systems.
+You can write executable features (Epics and Stories) that can be easily re-used across different projects.
 
-You write executable features (Epics and Stories) that can be easily re-used across different projects.
-
-Since features are written in "natural language" every stakeholder (including the CIO :-) can make sense of them.
+We favour a Business Driven Development (BDD) approach to designing, deploying and governing software systems.
 
 - Simplify
 - Standardise
 - Socialise
+
+Since features are written in english every stakeholder (including the CIO :-) can make sense of them.
 
 [View the PDF introduction](docs/Intro.pdf). 
 
