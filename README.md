@@ -104,7 +104,7 @@ Next, let's enable ApiGeek-Architect's built-in [Dialect](https://github.com/api
 
 The output is nicely formatted to help design, debug, showcase and socialise.
 
-	$ export DEBUG=dialect*
+	$ export DEBUG=apigeek*
 	$ apigeek
 
 To turn it off again, type:
