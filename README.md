@@ -228,7 +228,7 @@ Software engineers create "blueprints" that capture the patterns, templates and 
 
 Then ApiGeek-Architect can create customised websites, portals, Apps, APIs, mock servers, micro services and more.
 
-Please share your blueprints so that ApiGeek-Architect becomes more useful for all of us.
+Please share your custom Blueprints and Dialects so that ApiGeek-Architect becomes more useful for all of us.
 
 I want to license ApiGeek-Architect
 ===================================
