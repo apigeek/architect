@@ -179,7 +179,7 @@ If yours doesn't then there is alternative - use {{mustache}} templates to modif
 
 In this way, your BDD features are neatly abstracted from your runtime configuration.
 
-You can change the name of the file using the "--config <config.json> option.
+You can change the name of the file using --config <other-config.json>
 
 To specify a custom configuration for your features, type:
 
