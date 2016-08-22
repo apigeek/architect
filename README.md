@@ -122,12 +122,11 @@ Let's create a trivial example of a hypothetical test case.
 	Scenario: Trivial Test
 
         Given I am testing a story
-        When debug feature story works
-        And log feature story works
-        And error feature story works
+        When debug works
+        And log works
+        And error works
         Then I assert this.name == "story"
 		And I succeed
-
 
 I want to learn more about Architect
 ====================================
