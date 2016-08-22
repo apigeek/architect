@@ -205,8 +205,13 @@ I want to add comments
 
 Simple, place a # before any line and it will be ignored by Architect.
 
-		Given I am broken
+	# This is ignored by the parser
+
+	Scenario: Comments Example
+
+		Given I am using comments
 		# Then I fail
+		Then I succeed
 
 
 It's useful to add detailed instructions about your intentions or to prevent a statement from running, for example during development.
