@@ -111,16 +111,6 @@ To turn it off again, type:
 
 ApiGeek-Architect can be invoked elegantly from an API, the command line, Mocha, your IDE or your DevOps workflow.
 
-
-I want to organise my work into folders
-=======================================
-
-If your features are in a different location then use the "--features" or "--epics" option to locate them. 
-
-	$ apigeek --verbose --archive ./my--archive --config ./my-context.json --features ./my-features
-
-These folders are not automatically created, they return an error if not found.
-
 I want to test that my stories worked
 =====================================
 
@@ -165,28 +155,33 @@ For more information:
 
 [Software Blueprint Dialect](/apigeek/dialect-blueprint/). 
 
+I want to organise my work into folders
+=======================================
+
+If your features are in a different location then use the "--features" or "--epics" option to locate them. 
+
+	$ apigeek --verbose --archive ./my--archive --features ./my-features
+
+These folders are not automatically created, they return an error if they're not found.
+
 I want to re-use feature across multiple projects
 =================================================
 
 ApiGeek-Architect was designed to support a declarative style so that features are portable between dev, feature and production environments. 
 
-To achieve portability, environment-specific properties can be declared in a "config" file.
+Supplying a different "config" file for each environment allows Feature features to be re-used across multiple environments.
+
+You can change the name of the file using the "--config <config.json> option.
+
+In this way, your BDD features are neatly abstracted from your runtime configuration.
+
+To specify a custom configuration for your features, type:
+
+	$ apigeek --config ./my-context.json
 
 By default, ApiGeek-Architect will try to load a configuration file called "apigeek.json" from your current directory. 
 
 If no file is found, then sensible default values are defined.
-
-You can change the name of the file using the "--config <file" option.
-
-In this way, your BDD features are neatly abstracted from your runtime configuration.
-
-To specify a custom configuration, use:
-
-	$ apigeek --config my-context.json
-
-If you omit the --config option, then the "apigeek.json" file in the current folder will be used.
-
-Supplying a different "config" file for each environment allows Feature features to be re-used across multiple environments.
 
 I want to perform operations before every scenario
 ==================================================
