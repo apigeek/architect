@@ -228,9 +228,12 @@ That is our goal too. We'll continue to address the needs of Enterprise Architec
 
 Competent software engineers can easily create "blueprints" that capture the patterns, templates and files used to build SDLC artefacts.
 
+Then ApiGeek-Architect can re-use those blueprints to build customised websites, portals, Apps, APIs, mock servers, micro services and more.
+
 Please share any custom Blueprints and Dialects so that ApiGeek-Architect becomes more useful for all of us.
 
-Then ApiGeek-Architect can re-use those blueprints to build customised websites, portals, Apps, APIs, mock servers, micro services and more.
+If you need support to build or debug your community Blueprints or Dialects, please ask@apigeek.me
+
 
 I want to license ApiGeek-Architect
 ===================================
