@@ -23,6 +23,6 @@
     "apigeek": "lib/index.js"
   },
   "dependencies": {
-    "apigeek-dialect": "^0.9.6"
+    "apigeek-dialect": "^0.9.7"
   }
 }
