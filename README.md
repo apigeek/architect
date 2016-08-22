@@ -165,13 +165,21 @@ These folders are not automatically created, they return an error if they're not
 I want to re-use feature across multiple projects
 =================================================
 
-ApiGeek-Architect was designed to support a declarative style so that features are portable between dev, feature and production environments. 
+ApiGeek-Architect was designed to support a declarative style so that features are portable. 
 
-Supplying a different "config" file for each environment allows Feature features to be re-used across multiple environments.
+Supplying a different "config" file for each environment allows features to be re-used across multiple environments.
 
-You can change the name of the file using the "--config <config.json> option.
+For example, features can adapt to dev, QA and live environments - injecting hostnames, credentials, etc as required.
+
+Most Dialects configure themselves automatically. 
+
+If yours doesn't then there is alternative - use {{mustache}} templates to modify statements prior to execution.
+
+	Given I login as {{scope.actor}}
 
 In this way, your BDD features are neatly abstracted from your runtime configuration.
+
+You can change the name of the file using the "--config <config.json> option.
 
 To specify a custom configuration for your features, type:
 
