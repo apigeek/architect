@@ -10,7 +10,6 @@ Your features are written in "natural language" so every stakeholder (including 
 
 [View the PDF introduction](docs/Intro.pdf). 
 
-
 I want to automate myself
 =========================
 
@@ -18,9 +17,11 @@ ApiGeek-Architect is an automation tool for software architects.
 
 You write your process and governance and ApiGeek-Architect takes care of the rest.
 
+A feature (or epic) collects together related stories / scenarios .
+
 A scenario describes the expected behavior and outcomes in a way that is both human and machine friendly.
 
-A feature (or epic) collects together related stories / scenarios .
+The scenarios contain executable english instructions - related instructions are packaged as dialects.
 
 I want to use natural language
 ==============================
@@ -45,8 +46,8 @@ The results are nicely formatted to help debug, showcase and socialise.
 
 You can download pre-packaged vocabularies and/or roll your own with simple Javascript.
 
-I want to see an example
-========================
+I want to see a working example
+===============================
 
 Architect features are collections of scenarios.
 
@@ -73,8 +74,8 @@ You can influence what Architect understands using @dialect annotations.
 	    When I GET http://google.com
 	    Then response code should be 302
 
-I want to test-drive Architect
-==============================
+I want to test-drive ApiGeek-Architect
+======================================
 
 ApiGeek-Architect is built using NodeJS. If you're new to node, pre-read [Getting Started](https://www.npmjs.com/package/ApiGeek-dialect/tutorial).
 
@@ -106,8 +107,8 @@ To turn it off again, type:
 	$ export DEBUG=
 	$ apigeek
 
-I want to organise features into folders
-========================================
+I want to organise my work into folders
+=======================================
 
 If your features are in a different location then use the "--features" or "--epics" option to locate them. 
 
@@ -140,8 +141,8 @@ For more information:
 
 [Software Blueprint Dialect](/apigeek/dialect-blueprint/). 
 
-I want to capture my Stories
-============================
+I want to test capture my stories worked
+========================================
 
 A scenario describes a Story - essentially it's a list of instructions and expectations.
 
@@ -166,7 +167,7 @@ ApiGeek-Architect was designed to support a declarative style so that features a
 
 To achieve portability, environment-specific properties can be declared in a "config" file.
 
-By default, dialect will try to load a configuration file called "apigeek.json" from your current directory. 
+By default, ApiGeek-Architect will try to load a configuration file called "apigeek.json" from your current directory. 
 
 If no file is found, then sensible default values are defined.
 
