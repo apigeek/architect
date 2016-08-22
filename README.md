@@ -224,9 +224,9 @@ I want to automate everything
 
 That is our goal. We'll continue to create new Dialects that address the needs of Enterprise Architects. 
 
-Software engineers create "blueprints" that capture the patterns, templates and files used to build SDLC artefacts.
+Competent software engineers can easily create "blueprints" that capture the patterns, templates and files used to build SDLC artefacts.
 
-Then ApiGeek-Architect can create customised websites, portals, Apps, APIs, mock servers, micro services and more.
+Then ApiGeek-Architect re-uses the blueprints to build customised websites, portals, Apps, APIs, mock servers, micro services and more.
 
 Please share your custom Blueprints and Dialects so that ApiGeek-Architect becomes more useful for all of us.
 
