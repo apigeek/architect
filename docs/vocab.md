@@ -51,19 +51,19 @@ GIVEN
 
 A multi-line syntax is supported for injecting more complex objects such as CSV, JSON or XML:
 
-    GIVEN some CSV as $var_name:
-  --------
-  what, who
-  hello, world
-  greetings, earthling
-  --------
+	    GIVEN some CSV as $var_name:
+	  --------
+	  what, who
+	  hello, world
+	  greetings, earthling
+	  --------
 
 or:
 
-    GIVEN I set $var_name to JSON:
-  --------
-  { "hello": "world", "earth": { "moon": "cheese" } }
-  --------
+	    GIVEN I set $var_name to JSON:
+	  --------
+	  { "hello": "world", "earth": { "moon": "cheese" } }
+	  --------
 
 
 WHEN
