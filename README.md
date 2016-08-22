@@ -100,11 +100,13 @@ Paste the Feature Example from above, then run 'apigeek' again:
 
 	$ apigeek
 
-Next, let's enable ApiGeek-Architect's built-in [Dialect](https://github.com/apigeek/architect) debugger.
+Next, let's enable ApiGeek-Architect's built-in debugger.
 
-The output is nicely formatted to help design, debug, showcase and socialise.
 
 	$ export DEBUG=apigeek*
+
+Now, the verbose output is colour-coded to make it easier to design, debug, showcase and socialise your features.
+
 	$ apigeek
 
 To turn it off again, type:
