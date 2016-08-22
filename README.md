@@ -2,7 +2,7 @@
 Executable English for Software Architects
 ==========================================
 
-ApiGeek-Architect is a Business Driven Development (BDD) tool for architecting, deploying and governing software systems.
+ApiGeek-Architect is a Business Driven Development (BDD) tool for designing, deploying and governing software systems.
 
 You write executable Features (Epics and Stories) that can be easily re-used across different projects.
 
