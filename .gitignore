@@ -2,6 +2,7 @@
 .idea
 docs/*.key
 docs/*.pages
+repo
 
 node_modules
 .idea
