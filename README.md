@@ -2,6 +2,8 @@
 Executable English for Software Architects
 ==========================================
 
+ApiGeek-Architect is an automation tool for software architects. 
+
 ApiGeek-Architect is a Business Driven Development (BDD) tool for designing, deploying and governing software systems.
 
 You write executable Features (Epics and Stories) that can be easily re-used across different projects.
@@ -13,47 +15,44 @@ Your features are written in "natural language" so every stakeholder (including 
 I want to automate myself
 =========================
 
-ApiGeek-Architect is an automation tool for software architects. 
+You write your process and governance requirements in simplified english. ApiGeek-Architect takes care of the rest.
 
-You write your process and governance and ApiGeek-Architect takes care of the rest.
-
-A feature (or epic) collects together related stories / scenarios .
-
-A scenario describes the expected behavior and outcomes in a way that is both human and machine friendly.
+A feature (or epic) is used to collect together related stories / scenarios.
 
 The scenarios contain executable english instructions - related instructions are packaged as dialects.
+
+Each scenario describes the expected context, actions and outcomes in a way that is both human and machine friendly.
 
 I want to use natural language
 ==============================
 
-ApiGeek-Architect understands english language statements to build up a suite of features that executes your intentions.
-
+ApiGeek-Architect understands english language statements to build features that executes your intentions.
 
 The BDD notation for a scenario is:
 
-	Scenario: an example
-		GIVEN   some pre-condition
+	Scenario: An example
+		GIVEN   some context
 		WHEN    an action is performed
 		THEN    an outcome is expected
 
 The text following the keyword (GIVEN | WHEN | THEN) needs to match a phrase/pattern from a vocabulary.
 
-This BDD notation is called "Gherkin". 
+This BDD notation is called "Gherkin".
 
 Gherkin is human and machine readable - business analysts, featureers, developers and robots can collaborate.
 
-New features can be created using any simple text editor and re-use ApiGeek Architect's extensible instruction set.
+New features can be created using any simple text editor and re-use ApiGeek-Architect's extensible instruction set.
 
-You can download pre-packaged vocabularies and/or roll your own with simple Javascript.
+You can download pre-packaged vocabularies (called Dialects) and/or roll your own with simple Javascript.
 
 I want to see a working example
 ===============================
 
-Architect features are collections of scenarios. 
+ApiGeek-Architect's features are collections of scenarios. 
 
 To improve readability, the keyword AND can be used instead in place of the verbs above.
 
-You can influence what Architect understands using @dialect annotations.
+You can influence what ApiGeek-Architect understands using @dialect annotations.
 
 	@dialects=webapi
 	Feature: Verify that Google is accessible
@@ -186,8 +185,10 @@ If no file is found, then sensible default values are defined.
 I want to perform operations before every scenario
 ==================================================
 
-A feature feature may contain a background that are prepended to each scenario.
 Backgrounds are similar to scenarios, except they do not support annotations.
+
+Any feature can contain a background, in which case the steps that carried out before each scenario.
+
 
 	Background: Authenticate
 	
