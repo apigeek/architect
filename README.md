@@ -203,6 +203,8 @@ Any feature can contain a background, in which case the steps that carried out b
 I want to add comments
 ======================
 
+It's useful to document your intentions or to prevent a statement from running, for example during development.
+
 Simple, place a # before any line and it will be ignored by Architect.
 
 	# This is ignored by the parser
@@ -212,9 +214,6 @@ Simple, place a # before any line and it will be ignored by Architect.
 		Given I am using comments
 		# Then I fail
 		Then I succeed
-
-
-It's useful to add detailed instructions about your intentions or to prevent a statement from running, for example during development.
 
 I want to license ApiGeek-Architect
 ===================================
