@@ -2,7 +2,7 @@
 Executable English for Software Architects
 ==========================================
 
-Architect is a Business Driven Development (BDD) tool for architecting, deploying and governing software systems.
+ApiGeek-Architect is a Business Driven Development (BDD) tool for architecting, deploying and governing software systems.
 
 You write executable Features (Epics and Stories) that can be easily re-used across different projects.
 
@@ -16,7 +16,7 @@ I want to automate myself
 
 ApiGeek-Architect is an automation tool for software architects. 
 
-You write your process and governance and Architect takes care of the rest.
+You write your process and governance and ApiGeek-Architect takes care of the rest.
 
 A scenario describes the expected behavior and outcomes in a way that is both human and machine friendly.
 
@@ -76,9 +76,9 @@ You can influence what Architect understands using @dialect annotations.
 I want to test-drive Architect
 ==============================
 
-ApiGeek Architect is built using NodeJS. If you're new to node, pre-read [Getting Started](https://www.npmjs.com/package/ApiGeek-dialect/tutorial).
+ApiGeek-Architect is built using NodeJS. If you're new to node, pre-read [Getting Started](https://www.npmjs.com/package/ApiGeek-dialect/tutorial).
 
-You install ApiGeek Architect as a system-wide CLI command:
+You install ApiGeek-Architect as a system-wide CLI command:
 
 	$ npm install apigeek-architect -g
 
@@ -86,7 +86,7 @@ To run it simply type:
 
 	$ apigeek
 
-By default, ApiGeek Architect looks in the "./features" sub-directory. It will create the folder, if it's not found.
+By default, ApiGeek-Architect looks in the "./features" sub-directory. It will create the folder, if it's not found.
 
 However, It won't do much else until we provide some feature scenarios.
 
@@ -96,7 +96,7 @@ Paste the Feature Example from above, then run 'apigeek' again:
 
 	$ apigeek
 
-Next, let's enable ApiGeek Architect's built-in [Dialect](https://github.com/apigeek/architect) debugger
+Next, let's enable ApiGeek-Architect's built-in [Dialect](https://github.com/apigeek/architect) debugger
 
 	$ export DEBUG=dialect*
 	$ apigeek
