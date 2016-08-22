@@ -111,6 +111,8 @@ I want to organise features into folders
 
 If your features are in a different location then use the "--features" or "--epics" option to locate them. 
 
+	$ apigeek --verbose --archive ./my--archive --config ./my-context.json --features ./my-features
+
 These folders are not automatically created, they return an error if not found.
 
 I want to learn more about Architect
@@ -164,7 +166,7 @@ ApiGeek-Architect was designed to support a declarative style so that features a
 
 To achieve portability, environment-specific properties can be declared in a "config" file.
 
-By default, dialect will try to load a configuration file called "ApiGeek.json" from your current directory. 
+By default, dialect will try to load a configuration file called "apigeek.json" from your current directory. 
 
 If no file is found, then sensible default values are defined.
 
@@ -174,9 +176,9 @@ In this way, your BDD features are neatly abstracted from your runtime configura
 
 To specify a custom configuration, use:
 
-	$ apigeek --config config.json
+	$ apigeek --config my-context.json
 
-If you omit the --config option, then the "ApiGeek.json" file in the current folder will be used.
+If you omit the --config option, then the "apigeek.json" file in the current folder will be used.
 
 Supplying a different "config" file for each environment allows Feature features to be re-used across multiple environments.
 
