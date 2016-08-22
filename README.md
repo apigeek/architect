@@ -205,6 +205,10 @@ I want to add comments
 
 Simple, place a # before any line and it will be ignored by Architect.
 
+		Given I am broken
+		# Then I fail
+
+
 It's useful to add detailed instructions about your intentions or to prevent a statement from running, for example during development.
 
 I want to license ApiGeek-Architect
