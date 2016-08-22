@@ -10,9 +10,9 @@ You write executable features (Epics and Stories) that can be easily re-used acr
 
 Since features are written in "natural language" every stakeholder (including the CIO :-) can make sense of them.
 
-. Simplify
-. Standardise
-. Socialise
+- Simplify
+- Standardise
+- Socialise
 
 [View the PDF introduction](docs/Intro.pdf). 
 
@@ -222,13 +222,13 @@ Simple, place a # before any line and it will be ignored by Architect.
 I want to automate everything
 =============================
 
-That is our goal. We'll continue to create new Dialects that address solution areas. 
+That is our goal. We'll continue to create new Dialects that address the needs of Enterprise Architects. 
 
-Blueprints are bundles of templates and files that capture the patterns used to build valuable artefacts.
+Software engineers create "blueprints" that capture the patterns, templates and files used to build SDLC artefacts.
 
-Software engineers can create websites, portals, Apps, APIs, mock servers, micro services and more.
+Then ApiGeek-Architect can create customised websites, portals, Apps, APIs, mock servers, micro services and more.
 
-ApiGeek-Architect can orchestrate them all.
+Please share your blueprints so that ApiGeek-Architect becomes more useful for all of us.
 
 I want to license ApiGeek-Architect
 ===================================
