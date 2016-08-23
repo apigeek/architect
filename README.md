@@ -118,6 +118,13 @@ To turn it off again, type:
 
 ApiGeek-Architect can be invoked elegantly from an API, the command line, Mocha, your IDE or your DevOps workflow.
 
+I want to know what I can do
+============================
+
+To discover ApiGeek-Architect's supported vocabulary, type:
+
+	$ apigeek --knows
+
 I want to test that my stories worked
 =====================================
 
