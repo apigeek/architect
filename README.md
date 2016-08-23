@@ -121,7 +121,9 @@ ApiGeek-Architect can be invoked elegantly from an API, the command line, Mocha,
 I want to understand the installed vocabulary
 =============================================
 
-To discover ApiGeek-Architect's supported vocabulary, type:
+ApiGeek-Architect ships with a default vocabulary. Additional vocabularies can be easily added.
+
+To discover the installed vocabulary, type:
 
 	$ apigeek --knows
 
