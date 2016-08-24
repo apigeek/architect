@@ -97,37 +97,38 @@ By default, ApiGeek-Architect looks for ".feature" files recursively, starting i
 I want to create my first feature
 =================================
 
-1) Create a few example features in your ./features folder, type:
+1) To quickly create a few examples in the ./features folder, type:
 
-	$ apigeek --example
+		$ apigeek --example
 
-2) Execute your ".feature" files that were created in step #1
+This will create the ./features folder and copy some simple examples.
 
-	$ apigeek
+It will also write your default configuration to ./apigeek.json
 
-If all goes well you won't need the step:
+It won't damage if you run it again, except re-save your ./apigeek.json config.
+
+2) To execute your example ".feature" files, type:
+
+		$ apigeek
 
 3) If something goes wrong, enable ApiGeek-Architect's built-in debugger.
 
-	$ export DEBUG=apigeek*
-
-	$ apigeek
+		$ export DEBUG=apigeek*
+		$ apigeek
 
 The output is more verbose and colour-coded to make it easier to design, debug, showcase and socialise your features.
 
 To turn off debugging, type:
 
-	$ export DEBUG=
-	$ apigeek
+		$ export DEBUG=
+		$ apigeek
 
-ApiGeek-Architect can be invoked elegantly from an API, the command line, Mocha, your IDE or your DevOps workflow.
+I want to learn some vocabulary
+===============================
 
-I want to learn the vocabulary
-==============================
+ApiGeek-Architect ships with few default vocabularies - variables, files, web apis, web apps, etc. 
 
-ApiGeek-Architect ships with a default vocabulary. Additional vocabularies can be easily added.
-
-To discover the installed vocabulary, type:
+To discover what phrases exist in the vocabularies, type:
 
 	$ apigeek --knows
 
@@ -235,6 +236,7 @@ The Feature manager converts features and scenarios executable
 
 Then Engine executes each feature using Mocha.
 
+ApiGeek-Architect can be invoked elegantly from an API, the command line, Mocha, your IDE or your DevOps workflow.
 
 I want to add comments
 ======================

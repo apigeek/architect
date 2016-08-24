@@ -1,6 +1,6 @@
 @example
 #@uses=./features/example.js
-@dialect=./features/example
+#@dialect=./features/example.js
 Feature: An Example
 
 @example
