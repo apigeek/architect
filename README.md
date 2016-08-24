@@ -132,13 +132,6 @@ To discover what phrases exist in the vocabularies, type:
 
 	$ apigeek --knows
 
-I want to test that my stories worked
-=====================================
-
-A scenario describes a Story - essentially it's a list of instructions and expectations.
-
-The framework interprets each step in the scenario using one or more [Dialects](docs/vocab.md). 
-
 Let's create a trivial example of a hypothetical test case.
 
 	Scenario: Trivial Test
@@ -149,6 +142,21 @@ Let's create a trivial example of a hypothetical test case.
         And error works
         Then I assert this.name == "story"
 		And I succeed
+
+The steps are executed in sequence. 
+
+The GIVEN steps setup pre-conditions. The "Given I am $acting" phrase doesn't do much - except communicate intentions.
+
+The "WHEN ... " steps do useful work. 
+
+In this example, it simply emits (debug, log & error) messages to the console - if export DEBUG=apigeek* is used. 
+You can adjust the logging scope - to see only Web API messages, use: export DEBUG=apigeek:files
+
+The "THEN ..." steps make assertions, that is they test that conditions are met. For example, you can use arbitrary Javascript if necessary:
+
+        Then I assert $some_javascript
+
+The "I succeed", "I pass" always meet their conditions. The inverse "I fail" forces the scenario to abort and report it's failure.
 
 I want to learn more about ApiGeek-Architect
 ============================================
@@ -167,13 +175,17 @@ For more information:
 
 [Something Went Wrong](docs/errors.md). 
 
-[Web API Dialect](/apigeek/dialect-webapi/). 
+[Web API Dialect](https://github.com/apigeek/dialect-webapi/blob/master/vocab.md). 
 
-[Web Apps Dialect](/apigeek/dialect-webapp/). 
+[Web API Advanced](https://github.com/apigeek/dialect-webapi/blob/master/advanced.md). 
 
-[Network Dialect](/apigeek/dialect-net/). 
+[Web Apps Dialect](https://github.com/apigeek/dialect-webapp/blob/master/vocab.md). 
 
-[Software Blueprint Dialect](/apigeek/dialect-blueprint/). 
+[Web Apps Advanced](https://github.com/apigeek/dialect-webapp/blob/master/advanced.md). 
+
+[Software Blueprint Dialect](https://github.com/apigeek/dialect-blueprint/blob/master/vocab.md). 
+
+[Software Blueprint Advanced](https://github.com/apigeek/dialect-blueprint/blob/master/advanced.md). 
 
 I want to organise my work into folders
 =======================================
