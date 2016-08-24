@@ -1,15 +1,12 @@
 var assert = require('assert');
-var request = require('request');
-var _ = require('underscore');
-var fs = require('fs');
-var path = require('path');
 var debug = require('debug')('dialect:example');
 
 module.exports = function(learn, config) {
 
     learn.given(["I am an example"], function(done) {
         assert(this.example, "Not an example - use @example before feature")
-        debug("You are an Apigeek !!")
+        debug("You are an ApiGeek !!")
+        log("We are ApiGeeks !!")
         done && done();
     });
 

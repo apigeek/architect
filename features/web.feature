@@ -1,5 +1,6 @@
 @cookies
 @dialects=webapi
+@skip
 Feature: Verify that Google is accessible
 
 Background: Google Scenarios

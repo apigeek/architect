@@ -1,15 +1,15 @@
-Feature: Verify that 'variables' feature is working
+Feature: Variables are working
 
   Scenario: Test Variable Assignment
 
     Given I am testing dialect
-    When I set test to hello
+    And I set test to hello
     Then variable test should match hello
 
   Scenario: Test CSV sample
 
     Given I am testing CSV parsing
-    When some CSV as test:
+    And some CSV as test:
   --------
   what, who
   hello, world
@@ -24,13 +24,13 @@ Feature: Verify that 'variables' feature is working
   Scenario: Test set body JSON sample - indirect via variable
 
     Given I am testing JSON
-    When I set test to JSON:
+    And  I set test to JSON:
   --------
   { "hello": "world", "earth": { "moon": "cheese" } }
   --------
     Then hello in test should match world
     And earth.moon in test should match cheese
-    And I assert this.vars.test.hello=="world"
+    Then I assert this.vars.test.hello=="world"
     And I assert this.vars.test.earth.moon=="cheese"
 
 

@@ -4,11 +4,11 @@ Executable English for Software Architects
 
 ApiGeek-Architect is an automation and orchestration tool for software architects. 
 
-We favour a Business Driven Development (BDD) approach to designing, deploying and governing software systems.
-
 - Simplify
 - Standardise
 - Socialise
+
+We favour a Business Driven Development (BDD) approach to designing, deploying and governing software systems.
 
 Since features are written in english every stakeholder (including the CIO :-) can make sense of them.
 
@@ -17,13 +17,11 @@ Since features are written in english every stakeholder (including the CIO :-) c
 I want to automate myself
 =========================
 
-You write your process and governance requirements in simplified english. 
+You write your process and governance requirements in a simplified english - called Gherkin.
 
-A feature (or epic) is used to collect together related stories / scenarios.
+These "scenarios" contain executable english instructions - actions and assertions.
 
-Your features (Epics and Stories) can be easily re-used across different projects.
-
-The scenarios contain executable english instructions - related instructions are packaged as dialects.
+Features are lists of related scenarios.
 
 Each scenario describes the expected context, actions and outcomes in a way that is both human and machine friendly.
 
@@ -92,34 +90,40 @@ To run it simply type:
 
 	$ apigeek
 
-By default, ApiGeek-Architect looks in the "./features" sub-directory. It will create the folder, if it's not found.
-
 However, It won't do much else until we provide some feature scenarios.
 
-Now, create a file called ./features/my-first.feature with a simple text editor. 
+By default, ApiGeek-Architect looks for ".feature" files recursively, starting in the current directory.
 
-Paste the Feature Example from above, then run 'apigeek' again:
+I want to create my first feature
+=================================
+
+1) Create a few example features in your ./features folder, type:
+
+	$ apigeek --example
+
+2) Execute your ".feature" files that were created in step #1
 
 	$ apigeek
 
-Next, let's enable ApiGeek-Architect's built-in debugger.
+If all goes well you won't need the step:
 
+3) If something goes wrong, enable ApiGeek-Architect's built-in debugger.
 
 	$ export DEBUG=apigeek*
 
-Now, the verbose output is colour-coded to make it easier to design, debug, showcase and socialise your features.
-
 	$ apigeek
 
-To turn it off again, type:
+The output is more verbose and colour-coded to make it easier to design, debug, showcase and socialise your features.
+
+To turn off debugging, type:
 
 	$ export DEBUG=
 	$ apigeek
 
 ApiGeek-Architect can be invoked elegantly from an API, the command line, Mocha, your IDE or your DevOps workflow.
 
-I want to understand the installed vocabulary
-=============================================
+I want to learn the vocabulary
+==============================
 
 ApiGeek-Architect ships with a default vocabulary. Additional vocabularies can be easily added.
 
@@ -217,6 +221,21 @@ Any feature can contain a background, in which case the steps that carried out b
 		GIVEN I login
 		AND I use a valid client certificate
 
+I want to know how it works
+===========================
+
+First, ApiGeek-Architect parses the command line and initializes it's Dialect parse, execution Engine and Feature manager.
+
+Next it loads the default dialect. These can be specified on using the APIGEEK_DIALECT environment variable. Dialects can also be
+specified using --dialect option and within Feature: definitions using the @dialect annotation.
+
+Dialects instruct the (Yadda) parser matching each set of Gerkin phrases to their specific function.
+
+The Feature manager converts features and scenarios executable 
+
+Then Engine executes each feature using Mocha.
+
+
 I want to add comments
 ======================
 
@@ -231,6 +250,8 @@ Simple, place a # before any line and it will be ignored by Architect.
 		Given I am using comments
 		# Then I fail
 		Then I succeed
+
+Instead, you should use @skip before a Feature: or Scenario: definition.  Synonyms are @broken and @todo.
 
 I want to automate everything
 =============================

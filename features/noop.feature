@@ -1,4 +1,4 @@
-Feature: No operations
+Feature: Not Operational
 
   Scenario: Always successful
 	Given I am testing 'pass'
