@@ -5,3 +5,9 @@ node_js:
   - "5.10"
   - "node"
 
+notifications:
+  email:
+    recipients:
+      - lee.curtis@troven.com.au
+    on_success: change
+    on_failure: always

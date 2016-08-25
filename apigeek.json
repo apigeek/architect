@@ -3,6 +3,10 @@
 		"google": {
 			"protocol": "https",
 			"hostname": "google.com"
+		},
+		"default": {
+			"protocol": "https",
+			"hostname": "example.com"
 		}
 	}
 }

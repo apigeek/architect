@@ -1,20 +1,30 @@
 @cookies
 @dialects=webapi
-@skip
-Feature: Verify that Google is accessible
+
+Feature: Simple HTTP
 
 Background: Google Scenarios
 
     Given I am googling
 
-  Scenario: Request Google homepage - with redirects
+  Scenario: Google - with redirects
 
     Given I enable redirects
     When I GET http://google.com
     Then response code should be 200
 
-  Scenario: Request Google homepage - no redirect
+@target=google
+  Scenario: Google - no redirect
 
     Given I disable redirects
-    When I GET http://google.com
+    When I GET /
     Then response code should be 302
+
+
+@target=example
+  Scenario: Example.com
+
+    Given I am browsing example.com
+    When I GET /
+    Then response code should be 200
+    And response body should contain Example Domain

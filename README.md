@@ -1,7 +1,6 @@
 
 ![Continuous Assurance - Thanks to Travis-CI](https://travis-ci.org/apigeek/architect.svg?branch=master)
 
-
 Executable English for Software Teams
 =====================================
 
@@ -33,18 +32,20 @@ They are written in english so that every stakeholder (including the CIO :-) can
 I want to automate myself
 =========================
 
-You write your process and governance requirements in a simplified dialect of english - called Gherkin.
+We're all busy. We write scripts, or at we should. But our scripts are unreadable by our stakeholders - often even ourselves.
 
-These "scenarios" contain executable english instructions - actions and assertions.
+With Architect, you write your requirements in a simplified dialect of english - called Gherkin. 
+
+These "Features" contain executable english instructions - actions and assertions - that are easy to read, write and socialise.
 
 Features are lists of related scenarios. It's the scenario's that do all the heavy lifting.
 
-Each scenario describes the expected context, actions and outcomes in a way that is both human and machine friendly.
+A scenario describes your pre-conditions, actions and outcomes in a way that is both human and machine friendly.
 
-ApiGeek-Architect should take care of the rest.
+Architect can be invoked elegantly from an API, the command line, Mocha, your IDE or your DevOps workflow.
 
-I want to use natural language
-==============================
+I want to understand Executable English
+=======================================
 
 The BDD notation for a feature / scenario is:
 
@@ -121,16 +122,20 @@ It will also write your default configuration to ./apigeek.json
 
 It won't damage if you run it again, except re-save your ./apigeek.json config.
 
+Or, you can just create the ./features folder and a default "apigeek.json" without the examples:
+
+	$ apigeek --init
+
 2) To execute your example ".feature" files, type:
 
 		$ apigeek
 
-3) If something goes wrong, enable ApiGeek-Architect's built-in debugger.
+3) If something goes wrong, enable the built-in debugger.
 
 		$ export DEBUG=apigeek*
 		$ apigeek
 
-The output is more verbose and colour-coded to make it easier to design, debug, showcase and socialise your features.
+Now, the output is verbose and colour-coded to make your life easier.
 
 To turn off debugging, type:
 
@@ -150,21 +155,23 @@ Let's create a trivial example of a hypothetical test case.
 
 	Scenario: Trivial Test
 
-        Given I am testing a story
+        Given I am testing debug
         When debug works
-        And log works
-        And error works
-        Then I assert this.name == "story"
 		And I succeed
 
-The steps are executed in sequence. 
+The steps are executed in sequence.
 
 The GIVEN steps setup pre-conditions. The "Given I am $acting" phrase doesn't do much - except communicate intentions.
 
-The "WHEN ... " steps do useful work. 
+The "WHEN ... " steps do useful work that result in desirable outcomes. For example: writing a file, requesting a web page, etc.
 
-In this example, it simply emits (debug, log & error) messages to the console - if export DEBUG=apigeek* is used. 
-You can adjust the logging scope - to see only Web API messages, use: export DEBUG=apigeek:files
+In this example, we simply write a debug message to the console, so let's turn on debug output.
+
+	$ export DEBUG=apigeek*
+
+You can adjust the logging scope - to see only Web API messages, use: 
+
+	$ export DEBUG=apigeek:files
 
 The "THEN ..." steps make assertions, that is they test that conditions are met. For example, you can use arbitrary Javascript if necessary:
 
@@ -200,7 +207,7 @@ For more information:
 [Software Blueprint Dialect](https://github.com/apigeek/dialect-blueprint/blob/master/vocab.md). 
 
 [Software Blueprint Advanced](https://github.com/apigeek/dialect-blueprint/blob/master/advanced.md). 
-
+ 
 I want to organise my work into folders
 =======================================
 
@@ -251,18 +258,22 @@ Any feature can contain a background, in which case the steps that carried out b
 I want to know how it works
 ===========================
 
-First, ApiGeek-Architect parses the command line and initializes it's Dialect parse, execution Engine and Feature manager.
+First, ApiGeek-Architect parses the command line and initializes the Dialect, Features and Engine components.
 
-Next it loads the default dialect. These can be specified on using the APIGEEK_DIALECT environment variable. Dialects can also be
+Next it loads the default dialects. These can be specified on using the APIGEEK_DIALECT environment variable. Dialects can also be
 specified using --dialect option and within Feature: definitions using the @dialect annotation.
 
-Dialects instruct the (Yadda) parser matching each set of Gerkin phrases to their specific function.
+Each Dialect instructs the parser (Yadda) to match a set of Gherkin phrases to their related function.
 
-The Feature manager converts features and scenarios executable 
+The Feature manager converts features and scenarios into executable units. 
 
-Then Engine executes each feature using Mocha.
+User defined variables are scoped at the feature-level meaning they are shared between scenarios within the same feature. 
 
-ApiGeek-Architect can be invoked elegantly from an API, the command line, Mocha, your IDE or your DevOps workflow.
+The --config file is used as the basis for internal context variables. They are scoped to each scenario.
+
+These variables - such as web requests/responses - can be accessed using the "this." qualifier - with due caution.
+
+Next, the Engine runs each feature using the built-in Mocha runner. Results are correlated and output according to your CLI options.
 
 I want to add comments
 ======================

@@ -1,17 +1,7 @@
 Advanced Dialect
 ================
 
-I want to use ApiGeek-Architect as a RESTful micro-service
-==========================================================
-
-ApiGeek-Architect contains a lightweight web server, to share it with other "apigeeks", type:
-
-	$ apigeeks & 
-
-Now you can issue feature requests to the API and receive JSON formatted results.
-
-	$ curl -v -X POST http://localhost:10101/feature -D @features/example.feature
-
+Hidden behind the simple english dialects, there is a lot of hidden power. 
 
 I want to work complex data
 ===========================
@@ -130,4 +120,16 @@ To confirm it simply add a section to your JSON config file:
 Once you have an active [Slack](https://slack.com/create) account then obtain a [new Slack webhook URL](https://api.slack.com/incoming-webhooks)
 
 You will receive events when features start, end or fail.
+
+I want to use ApiGeek-Architect as a RESTful micro-service
+==========================================================
+
+Architect contains a lightweight web server, to share it with other "apigeeks", type:
+
+	$ apigeeks & 
+
+Now you can issue feature requests to the API and receive JSON formatted results.
+
+	$ curl -v -X POST http://localhost:10101/feature -D @features/example.feature
+
 
