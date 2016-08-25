@@ -1,4 +1,4 @@
-![ApiGeek](docs/favicon.png) ![Continuous Assurance - Thanks to Travis-CI](https://travis-ci.org/apigeek/architect.svg?branch=master) ![version](https://img.shields.io/github/release/apigeek/architect.svg?maxAge=2592000) ![dependencies](https://img.shields.io/david/apigeek/architect.svg?maxAge=2592000) ![apigeeks] (https://img.shields.io/badge/apigeeks-are%20awesome-800080.svg)
+![ApiGeek](docs/favicon.png) ![CI](https://travis-ci.org/apigeek/architect.svg?branch=master) ![version](https://img.shields.io/github/release/apigeek/architect.svg?maxAge=2592000) ![dependencies](https://img.shields.io/david/apigeek/architect.svg?maxAge=2592000) ![apigeeks] (https://img.shields.io/badge/apigeeks-are%20awesome-800080.svg)
 
 Executable English for Software Teams
 =====================================
@@ -317,7 +317,7 @@ I want to license ApiGeek:Architect
 
 This software is licensed under the Apache 2 license, quoted below.
 
-Copyright 2014-2016 Lee Curtis <architect@ApiGeek.me>
+Copyright 2015-2016 Lee Curtis & Troven 2009-2015
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not
 use this file except in compliance with the License. You may obtain a copy of
