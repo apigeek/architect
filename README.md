@@ -1,7 +1,7 @@
 ![ApiGeek](docs/favicon.png) ![CI](https://travis-ci.org/apigeek/architect.svg?branch=master) ![version](https://img.shields.io/github/release/apigeek/architect.svg?maxAge=2592000) ![dependencies](https://img.shields.io/david/apigeek/architect.svg?maxAge=2592000) ![apigeeks] (https://img.shields.io/badge/apigeeks-are%20awesome-800080.svg)
 
-Executable English for Software Teams
-=====================================
+Executable English for Agile Software Teams
+===========================================
 
 ApiGeek:Architect is an automation and orchestration tool for software teams. 
 
@@ -208,7 +208,7 @@ I want to organise my work into folders
 
 If your features are in a different location then use the "--features" option to locate them. 
 
-	$ apigeek --archive ./my--archive --features ./my-features
+	$ apigeek --archive ./my-archive --features ./my-features
 
 These folders are not automatically created, they will throw an error if they're not found.
 
