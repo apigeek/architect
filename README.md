@@ -1,11 +1,9 @@
-![ApiGeek](docs/favicon.png) - 
-
-![Continuous Assurance - Thanks to Travis-CI](https://travis-ci.org/apigeek/architect.svg?branch=master)
+![ApiGeek](docs/favicon.png) ![Continuous Assurance - Thanks to Travis-CI](https://travis-ci.org/apigeek/architect.svg?branch=master)
 
 Executable English for Software Teams
 =====================================
 
-ApiGeek-Architect is an automation and orchestration tool for software teams. 
+ApiGeek:Architect is an automation and orchestration tool for software teams. 
 
 Architect embeds an english language scripting language that eases various burdens during software development. 
 
@@ -45,8 +43,8 @@ A scenario describes your pre-conditions, actions and outcomes in a way that is 
 
 Architect can be invoked elegantly from an API, the command line, Mocha, your IDE or your DevOps workflow.
 
-I want to understand Executable English
-=======================================
+I want to learn Executable English
+==================================
 
 The BDD notation for a feature / scenario is:
 
@@ -61,18 +59,18 @@ The text following the keyword (GIVEN | WHEN | THEN) needs to match a phrase/pat
 
 This BDD notation is called "Gherkin". Gherkin is human and machine readable - business analysts, featureers, developers and robots can collaborate.
 
-New features can be created using any simple text editor - where you'd use ApiGeek-Architect's extensible vocabulary to write them.
+New features can be created using any simple text editor - where you'd use ApiGeek:Architect's extensible vocabulary to write them.
 
 You can download pre-packaged vocabularies (called Dialects) and/or roll your own with simple Javascript.
 
 I want to see a working example
 ===============================
 
-ApiGeek-Architect's features are collections of scenarios. 
+ApiGeek:Architect's features are collections of scenarios. 
 
 To improve readability, the keyword AND can be used instead in place of the verbs above.
 
-You can influence what ApiGeek-Architect understands using @dialect annotations.
+You can influence what ApiGeek:Architect understands using @dialect annotations.
 
 	@dialects=webapi
 	Feature: Verify that Google is accessible
@@ -93,12 +91,12 @@ You can influence what ApiGeek-Architect understands using @dialect annotations.
 	    When I GET http://google.com
 	    Then response code should be 302
 
-I want to test-drive ApiGeek-Architect
+I want to test-drive ApiGeek:Architect
 ======================================
 
-ApiGeek-Architect is built using NodeJS. If you're new to node, pre-read [Getting Started](https://www.npmjs.com/package/ApiGeek-dialect/tutorial).
+ApiGeek:Architect is built using NodeJS. If you're new to node, pre-read [Getting Started](https://www.npmjs.com/package/ApiGeek-dialect/tutorial).
 
-You install ApiGeek-Architect as a system-wide CLI command:
+You install ApiGeek:Architect as a system-wide CLI command:
 
 	$ npm install apigeek-architect -g
 
@@ -108,7 +106,7 @@ To run it simply type:
 
 However, It won't do much else until we provide some feature scenarios.
 
-By default, ApiGeek-Architect looks for ".feature" files recursively, starting in the current directory.
+By default, ApiGeek:Architect looks for ".feature" files recursively, starting in the current directory.
 
 I want to create my first feature
 =================================
@@ -146,7 +144,7 @@ To turn off debugging, type:
 I want to learn some vocabulary
 ===============================
 
-ApiGeek-Architect ships with few default vocabularies - variables, files, web apis, web apps, etc. 
+ApiGeek:Architect ships with few default vocabularies - variables, files, web apis, web apps, etc. 
 
 To discover what phrases exist in the vocabularies, type:
 
@@ -180,7 +178,7 @@ The "THEN ..." steps make assertions, that is they test that conditions are met.
 
 The "I succeed", "I pass" always meet their conditions. The inverse "I fail" forces the scenario to abort and report it's failure.
 
-I want to learn more about ApiGeek-Architect
+I want to learn more about ApiGeek:Architect
 ============================================
 
 For runtime options, type:
@@ -221,7 +219,7 @@ These folders are not automatically created, they return an error if they're not
 I want to re-use my features in other projects
 ==============================================
 
-ApiGeek-Architect was designed to support a declarative style so that features are portable. 
+ApiGeek:Architect was designed to support a declarative style so that features are portable. 
 
 Supplying a different "config" file for each environment allows features to be re-used across multiple environments.
 
@@ -239,7 +237,7 @@ To specify a runtime configuration for your features, type:
 
 	$ apigeek --config ./my-context.json
 
-By default, ApiGeek-Architect will try to load a configuration file called "apigeek.json" from your current directory. 
+By default, ApiGeek:Architect will try to load a configuration file called "apigeek.json" from your current directory. 
 
 If no file is found, then sensible default values are defined.
 
@@ -259,7 +257,7 @@ Any feature can contain a background, in which case the steps that carried out b
 I want to know how it works
 ===========================
 
-First, ApiGeek-Architect parses the command line and initializes the Dialect, Features and Engine components.
+First, ApiGeek:Architect parses the command line and initializes the Dialect, Features and Engine components.
 
 Next it loads the default dialects. These can be specified on using the APIGEEK_DIALECT environment variable. Dialects can also be
 specified using --dialect option and within Feature: definitions using the @dialect annotation.
@@ -307,14 +305,14 @@ That is our goal too. We'll continue to address the needs of Enterprise Architec
 
 Competent software engineers can easily create "blueprints" that capture the patterns, templates and files used to build SDLC artefacts.
 
-Then ApiGeek-Architect can re-use those blueprints to build customised websites, portals, Apps, APIs, mock servers, micro services and more.
+Then ApiGeek:Architect can re-use those blueprints to build customised websites, portals, Apps, APIs, mock servers, micro services and more.
 
-Please share any custom Blueprints and Dialects so that ApiGeek-Architect becomes more useful for all of us.
+Please share any custom Blueprints and Dialects so that ApiGeek:Architect becomes more useful for all of us.
 
 If you need support to build or debug your community Blueprints or Dialects, please ask@apigeek.me
 
 
-I want to license ApiGeek-Architect
+I want to license ApiGeek:Architect
 ===================================
 
 This software is licensed under the Apache 2 license, quoted below.
