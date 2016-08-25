@@ -1,6 +1,6 @@
 
-Executable English for Software Architects
-==========================================
+Executable English for Software Teams
+=====================================
 
 ApiGeek-Architect is an automation and orchestration tool for software teams. 
 
@@ -23,7 +23,7 @@ We actively support a number of use cases:
 
 Task definitions are declarative - which makes them easy to read, write and re-use.
 
-Since they are written in english - so every stakeholder (including the CIO :-) can make sense of them.
+They are written in english so that every stakeholder (including the CIO :-) can make sense of them.
 
 [View the PDF introduction](docs/Intro.pdf). 
 
@@ -34,18 +34,18 @@ You write your process and governance requirements in a simplified dialect of en
 
 These "scenarios" contain executable english instructions - actions and assertions.
 
-Features are lists of related scenarios.
+Features are lists of related scenarios. It's the scenario's that do all the heavy lifting.
 
 Each scenario describes the expected context, actions and outcomes in a way that is both human and machine friendly.
 
-ApiGeek-Architect takes care of the rest.
+ApiGeek-Architect should take care of the rest.
 
 I want to use natural language
 ==============================
 
-ApiGeek-Architect understands english language statements to build features that executes your intentions.
+The BDD notation for a feature / scenario is:
 
-The BDD notation for a scenario is:
+	Feature: Basic Examples
 
 	Scenario: An example
 		GIVEN   some context
@@ -54,11 +54,9 @@ The BDD notation for a scenario is:
 
 The text following the keyword (GIVEN | WHEN | THEN) needs to match a phrase/pattern from a vocabulary.
 
-This BDD notation is called "Gherkin".
+This BDD notation is called "Gherkin". Gherkin is human and machine readable - business analysts, featureers, developers and robots can collaborate.
 
-Gherkin is human and machine readable - business analysts, featureers, developers and robots can collaborate.
-
-New features can be created using any simple text editor and re-use ApiGeek-Architect's extensible instruction set.
+New features can be created using any simple text editor - where you'd use ApiGeek-Architect's extensible vocabulary to write them.
 
 You can download pre-packaged vocabularies (called Dialects) and/or roll your own with simple Javascript.
 
