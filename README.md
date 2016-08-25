@@ -9,7 +9,7 @@ Architect uses English as a scripting language to help simplify, standardise and
 
 We take a Business Driven Development (BDD) approach to designing, deploying and governing complex software systems.
 
-Architect is built to actively support a number of high-value use cases:
+Architect was built to actively support a number of high-value use cases:
 
 	As an over-worked Developer, I want to build skeleton code using my favourite framework
 	As a QA Specialist, I want to generate executable BDD tests for APIs and web apps
@@ -164,7 +164,7 @@ In this example, we simply write a debug message to the console, so let's turn o
 
 You can adjust the logging scope - to see only Web API messages, use: 
 
-	$ export DEBUG=apigeek:files
+	$ export DEBUG=apigeek:webapi
 
 The "THEN ..." steps make assertions, that is they test that conditions are met. For example, you can use arbitrary Javascript if necessary:
 
