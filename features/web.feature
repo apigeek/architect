@@ -18,7 +18,7 @@ Background: Google Scenarios
 
     Given I disable redirects
     When I GET /
-    Then response code should be 302
+    Then response code should be 3xx
 
 
 @target=example

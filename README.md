@@ -290,7 +290,9 @@ Simple, place a # before any line and it will be ignored by Architect.
 		# Then I fail
 		Then I succeed
 
-Instead, you should use @skip before a Feature: or Scenario: definition.  Synonyms are @broken and @todo.
+Instead, you should use @skip or @todo before a Feature: or Scenario: definition.
+ 
+If you mark a feature/scenario with @bug then it will be ignored, unless you run with the --debg
 
 I want to automate everything
 =============================
