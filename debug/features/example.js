@@ -6,6 +6,8 @@ var path = require('path');
 var debug = require('debug')('dialect:example');
 
 module.exports = function(learn, config) {
+    assert(learn, "missing learn");
+    assert(config, "missing config");
 
     learn.given(["I am an example"], function(done) {
         assert(this.example, "Not an example - use @example before feature")
