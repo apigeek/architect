@@ -14,6 +14,13 @@ Our mantra is:
 
 We take a Business Driven Development (BDD) approach to designing, deploying and governing software systems.
 
+We actively support a number of use cases:
+
+	As an over-worked Developer, I want to build skeleton code using my favourite framework
+	As a QA Specialist, I want to generate executable BDD tests for APIs and web apps
+	As a Product Owner, I want to up-to-date document for various stakeholders
+	As an Enterprise Architect, I want to build, document and instrument my solutions
+
 Task definitions are declarative - which makes them easy to read, write and re-use.
 
 Since they are written in english - so every stakeholder (including the CIO :-) can make sense of them.
