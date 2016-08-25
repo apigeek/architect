@@ -9,16 +9,14 @@ Architect uses English as a scripting language to help simplify, standardise and
 
 We take a Business Driven Development (BDD) approach to designing, deploying and governing complex software systems.
 
-Architect was built to actively support a number of high-value use cases:
+Architect was designed to support a number of common use cases:
 
 	As an over-worked Developer, I want to build skeleton code using my favourite framework
 	As a QA Specialist, I want to generate executable BDD tests for APIs and web apps
 	As a Product Owner, I want to up-to-date document for various stakeholders
 	As an Enterprise Architect, I want to build, document and instrument my solutions
 
-Task definitions are declarative - which makes them easy to read, write and re-use.
-
-They are written in english so that every stakeholder (including the CIO :-) can make sense of them.
+Tasks are written in English so that every stakeholder (including the CIO :-) can make sense of them.
 
 [View the PDF introduction](docs/Intro.pdf). 
 
@@ -27,9 +25,9 @@ I want to automate myself
 
 We're all busy. We write scripts, or at we should. But our scripts are unreadable by our stakeholders - often even ourselves.
 
-With Architect, you write your requirements in a simplified dialect of english - called Gherkin. 
+With Architect, you write your requirements in a simplified dialect of English - called Gherkin. 
 
-These "Features" contain executable english instructions - actions and assertions - that are easy to read, write and socialise.
+These "Features" contain executable English instructions - actions and assertions - that are easy to read, write and socialise.
 
 Features are lists of related scenarios. It's the scenario's that do all the heavy lifting.
 
@@ -179,7 +177,11 @@ For runtime options, type:
 
 	$ apigeek  -h
 
-For more information:
+We actively add capabilities and fix bugs. To upgrade to the latest version, type:
+
+	$ npm update apigeek-architect -g
+
+For more information, please read:
 
 [Example Features](features/). 
 
