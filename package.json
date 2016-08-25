@@ -1,63 +1,63 @@
 {
-	"name": "apigeek-architect",
-	"version": "1.0.0",
-	"description": "Executable English for Software Teams",
-	"main": "lib/index.js",
-	"directories": {
-		"doc": "docs"
-	},
-	"keywords": [
-		"openapi",
-		"swagger",
-		"scripting",
-		"docs",
-		"mocha",
-		"chai",
-		"mocha",
-		"gherkin",
-		"BDD",
-		"Specification",
-		"Natural Language",
-		"Test",
-		"API",
-		"Yeoman",
-		"Selenium",
-		"RESTful",
-		"QA",
-		"XML",
-		"Behaviour",
-		"Driven",
-		"documentation",
-		"declarative",
-		"builder",
-		"generator"
-	],
-	"scripts": {
-		"test": "lib/index.js"
-	},
-	"bugs": {
-		"url": "https://github.com/apigeek/project/issues",
-		"email": "architect@apigeek.me"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/apigeek/architect.git"
-	},
-	"author": "lee.curtis@troven.com.au",
-	"license": "Apache-2.0",
-	"bin": {
-		"apigeek": "lib/index.js",
-		"apigeeks": "lib/daemon.js"
-	},
-	"dependencies": {
-		"apigeek-dialect": "^0.9.17",
-		"apigeek-dialect-blueprint": "^0.0.2",
-		"apigeek-dialect-webapi": "^0.9.0",
-		"apigeek-dialect-webapp": "^1.6.0",
-		"assert": "^1.4.1",
-		"debug": "^2.2.0",
-		"mkdirp": "^0.5.1",
-		"request": "^2.74.0",
-		"underscore": "^1.8.3"
-	}
+  "name": "apigeek-architect",
+  "version": "1.0.1",
+  "description": "Executable English for Software Teams",
+  "main": "lib/index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": [
+    "openapi",
+    "swagger",
+    "scripting",
+    "docs",
+    "mocha",
+    "chai",
+    "mocha",
+    "gherkin",
+    "BDD",
+    "Specification",
+    "Natural Language",
+    "Test",
+    "API",
+    "Yeoman",
+    "Selenium",
+    "RESTful",
+    "QA",
+    "XML",
+    "Behaviour",
+    "Driven",
+    "documentation",
+    "declarative",
+    "builder",
+    "generator"
+  ],
+  "scripts": {
+    "test": "lib/index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/apigeek/project/issues",
+    "email": "architect@apigeek.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apigeek/architect.git"
+  },
+  "author": "lee.curtis@troven.com.au",
+  "license": "Apache-2.0",
+  "bin": {
+    "apigeek": "lib/index.js",
+    "apigeeks": "lib/daemon.js"
+  },
+  "dependencies": {
+    "apigeek-dialect": "^0.9.17",
+    "apigeek-dialect-blueprint": "^0.0.2",
+    "apigeek-dialect-webapi": "^0.9.0",
+    "apigeek-dialect-webapp": "^1.6.0",
+    "assert": "^1.4.1",
+    "debug": "^2.2.0",
+    "mkdirp": "^0.5.1",
+    "request": "^2.74.0",
+    "underscore": "^1.8.3"
+  }
 }
