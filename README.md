@@ -1,4 +1,7 @@
 
+![Continuous Assurance - Thanks to Travis-CI](https://travis-ci.org/apigeek/architect.svg?branch=master)
+
+
 Executable English for Software Teams
 =====================================
 
