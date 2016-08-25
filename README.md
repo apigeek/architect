@@ -2,7 +2,9 @@
 Executable English for Software Architects
 ==========================================
 
-ApiGeek-Architect is an automation and orchestration tool for software architects. 
+ApiGeek-Architect is an automation and orchestration tool for software teams. 
+
+Our high-levle design goals are to: 
 
 - Simplify
 - Standardise
