@@ -1,3 +1,4 @@
+![ApiGeek](docs/favicon.png) - 
 
 ![Continuous Assurance - Thanks to Travis-CI](https://travis-ci.org/apigeek/architect.svg?branch=master)
 
@@ -331,3 +332,19 @@ distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
 WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 License for the specific language governing permissions and limitations under
 the License.
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+             _                 _
+            (_)               | |
+  __ _ _ __  _  __ _  ___  ___| | __
+ / _` | '_ \| |/ _` |/ _ \/ _ \ |/ /
+| (_| | |_) | | (_| |  __/  __/   <
+ \__,_| .__/|_|\__, |\___|\___|_|\_\
+      | |       __/ |
+      |_|      |___/
+
+	License: Apache-2.0
+	Author: lee.curtis
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
