@@ -5,7 +5,7 @@ Executable English for Software Teams
 
 ApiGeek:Architect is an automation and orchestration tool for software teams. 
 
-Architect embeds an english language scripting language that eases various burdens during software development. 
+Architect embeds an english language scripting to help simplify software development. 
 
 Our mantra is: 
 
@@ -89,7 +89,7 @@ You can influence what ApiGeek:Architect understands using @dialect annotations.
 	
 	    Given I disable redirects
 	    When I GET http://google.com
-	    Then response code should be 302
+	    Then response code should be 3xx
 
 I want to test-drive ApiGeek:Architect
 ======================================
