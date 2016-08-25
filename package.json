@@ -1,6 +1,6 @@
 {
   "name": "apigeek-architect",
-  "version": "0.9.12",
+  "version": "0.9.13",
   "description": "Executable English for Software Teams",
   "main": "lib/index.js",
   "directories": {
