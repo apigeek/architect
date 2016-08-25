@@ -49,7 +49,7 @@
     "apigeek": "lib/index.js"
   },
   "dependencies": {
-    "apigeek-dialect": "^0.9.10",
+    "apigeek-dialect": "^0.9.17",
     "apigeek-dialect-blueprint": "^0.0.2",
     "apigeek-dialect-webapi": "^0.9.0",
     "apigeek-dialect-webapp": "^1.6.0",
