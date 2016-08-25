@@ -5,11 +5,11 @@ Executable English for Software Teams
 
 ApiGeek:Architect is an automation and orchestration tool for software teams. 
 
-Architect uses English as a scripting language to help simplify, standardise and socialise software development. 
+Architect uses English as a scripting language to help simplify, standardise and socialise software deliverables. 
 
-We take a Business Driven Development (BDD) approach to designing, deploying and governing software systems.
+We take a Business Driven Development (BDD) approach to designing, deploying and governing complex software systems.
 
-We actively support a number of use cases:
+Architect is built to actively support a number of high-value use cases:
 
 	As an over-worked Developer, I want to build skeleton code using my favourite framework
 	As a QA Specialist, I want to generate executable BDD tests for APIs and web apps
