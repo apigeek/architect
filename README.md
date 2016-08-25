@@ -1,4 +1,4 @@
-![ApiGeek](docs/favicon.png) ![Continuous Assurance - Thanks to Travis-CI](https://travis-ci.org/apigeek/architect.svg?branch=master)
+![ApiGeek](docs/favicon.png) ![Continuous Assurance - Thanks to Travis-CI](https://travis-ci.org/apigeek/architect.svg?branch=master) ![version](https://img.shields.io/github/release/apigeek/architect.svg?maxAge=2592000) ![dependencies](https://img.shields.io/david/apigeek/architect.svg?maxAge=2592000)
 
 Executable English for Software Teams
 =====================================
