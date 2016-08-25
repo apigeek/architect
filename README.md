@@ -4,22 +4,26 @@ Executable English for Software Architects
 
 ApiGeek-Architect is an automation and orchestration tool for software teams. 
 
-Our high-levle design goals are to: 
+Architect embeds an english language scripting language that eases various burdens during software development. 
+
+Our mantra is: 
 
 - Simplify
 - Standardise
 - Socialise
 
-We favour a Business Driven Development (BDD) approach to designing, deploying and governing software systems.
+We take a Business Driven Development (BDD) approach to designing, deploying and governing software systems.
 
-Since features are written in english every stakeholder (including the CIO :-) can make sense of them.
+Task definitions are declarative - which makes them easy to read, write and re-use.
+
+Since they are written in english - so every stakeholder (including the CIO :-) can make sense of them.
 
 [View the PDF introduction](docs/Intro.pdf). 
 
 I want to automate myself
 =========================
 
-You write your process and governance requirements in a simplified english - called Gherkin.
+You write your process and governance requirements in a simplified dialect of english - called Gherkin.
 
 These "scenarios" contain executable english instructions - actions and assertions.
 
