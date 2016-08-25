@@ -283,7 +283,6 @@ It's useful to document your intentions or to prevent a statement from running, 
 Simple, place a # before any line and it will be ignored by Architect.
 
 	# This is ignored by the parser
-
 	Scenario: Comments Example
 
 		Given I am using comments
@@ -292,7 +291,13 @@ Simple, place a # before any line and it will be ignored by Architect.
 
 Instead, you should use @skip or @todo before a Feature: or Scenario: definition.
  
-If you mark a feature/scenario with @bug then it will be ignored, unless you run with the --debg
+An @bug scenario will pass normally (skipped) but fail when --debug is used.
+
+	@bug=something is broken
+
+	Scenario: A Bug
+		Given I am a bug
+		Then I fail
 
 I want to automate everything
 =============================
