@@ -1,4 +1,15 @@
-Feature: Variables are working
+Feature: Variables
+
+  Scenario: Config Test
+
+    Given I am configured
+    And I set x = ok
+    Then I assert this.targets.google
+
+  Scenario: Scoped Var Test
+
+    Given I am scoped
+    Then I assert this.vars.x=="ok"
 
   Scenario: Test Variable Assignment
 

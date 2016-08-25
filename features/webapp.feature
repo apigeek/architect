@@ -1,4 +1,5 @@
 @target=google
+@bug
 Feature: Robot Web Browser
 
 @dialect=webapp
