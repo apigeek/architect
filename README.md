@@ -210,11 +210,11 @@ For more information:
 I want to organise my work into folders
 =======================================
 
-If your features are in a different location then use the "--features" or "--epics" option to locate them. 
+If your features are in a different location then use the "--features" option to locate them. 
 
-	$ apigeek --verbose --archive ./my--archive --features ./my-features
+	$ apigeek --archive ./my--archive --features ./my-features
 
-These folders are not automatically created, they return an error if they're not found.
+These folders are not automatically created, they will throw an error if they're not found.
 
 I want to re-use my features in other projects
 ==============================================
