@@ -5,6 +5,7 @@ docs/*.pages
 repo
 
 node_modules
+debug
 .idea
 local
 npm-debug.log
