@@ -115,7 +115,7 @@ It won't damage if you run it again, except re-save your ./apigeek.json config.
 
 Or, you can just create the ./features folder and a default "apigeek.json" without the examples:
 
-	$ apigeek --init
+	$ apigeek --initialize
 
 2) To execute your example ".feature" files, type:
 

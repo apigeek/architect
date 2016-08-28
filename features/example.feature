@@ -18,7 +18,8 @@ Feature: An Example
     When debug test works
     And log test works
     And error test works
-    Then I assert this.name == "story"
+    And I dump
+    Then I assert this.name == "scenario"
 
 @skip
   Scenario: Skip Broken Story

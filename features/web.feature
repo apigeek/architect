@@ -26,5 +26,4 @@ Background: Google Scenarios
 
     Given I am browsing example.com
     When I GET /
-    Then response code should be 200
-    And response body should contain Example Domain
+    Then response body should contain Example Domain
