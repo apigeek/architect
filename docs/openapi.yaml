@@ -1,0 +1,122 @@
+swagger: "2.0"
+
+info:
+  version: 0.0.1
+  title: API for ApiGeek Affirm
+  description: An API to run test suites written in BDD Executable English
+
+host: affirm.apigeek.me
+basePath: /affirm
+schemes:
+  - https
+
+x-meta4-id: configs
+
+paths:
+  /feature/{name}:
+    get:
+      operationId: feature_run
+      summary: Run a feature and return the results.
+      description: Returns a JSON object containing the result of the feature run.
+      security:
+        - ApiKeySecurity:
+            - feature
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: name
+          in: path
+          required: true
+          description: The name of the feature to run
+          type: string
+      responses:
+        200:
+          description: Feature results
+          schema:
+            $ref: "#/definitions/Results"
+        500:
+          $ref: "#/responses/500"
+
+definitions:
+  Results:
+    required:
+      - started
+      - stopped
+      - elapsed
+      - stats
+    properties:
+      started:
+        type: integer
+      stopped:
+        type: integer
+      elapsed:
+        type: integer
+      failures:
+        type: array
+        items:
+          $ref: "#/definitions/Result"
+      passes:
+        type: array
+        items:
+          $ref: "#/definitions/Result"
+      pending:
+        type: array
+        items:
+          $ref: "#/definitions/Result"
+      stats:
+          $ref: "#/definitions/Summary"
+
+  Summary:
+    properties:
+      suites:
+        type: integer
+      tests:
+        type: integer
+      passes:
+        type: integer
+      pending:
+        type: integer
+      failures:
+        type: integer
+      start:
+        type: integer
+      end:
+        type: integer
+      duration:
+        type: integer
+
+  Result:
+    properties:
+      title:
+        type: string
+      fullTitle:
+        type: string
+      duration:
+        type: integer
+      retried:
+        type: integer
+      err:
+        type: string
+
+  Error:
+    properties:
+      code:
+        type: string
+      message:
+        type: string
+
+responses:
+  500:
+    description: An unexpected error occured.
+    schema:
+      $ref: "#/definitions/Error"
+
+securityDefinitions:
+  ApiKeySecurity:
+    type: apiKey
+    in: query
+    name: apikey
+    scopes:
+      feature: Feature Running

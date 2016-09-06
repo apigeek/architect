@@ -1,0 +1,52 @@
+{
+	"name": "blueprint-openapi-test",
+	"version": "0.0.1",
+	"description": "Blueprint for OpenAPI Tests",
+	"main": "lib/index.js",
+	"directories": {
+		"doc": "docs",
+		"templates": "templates",
+		"assets": "assets"
+	},
+	"keywords": [
+		"openapi",
+		"swagger",
+		"scripting",
+		"docs",
+		"mocha",
+		"chai",
+		"mocha",
+		"gherkin",
+		"BDD",
+		"Specification",
+		"Natural Language",
+		"Test",
+		"API",
+		"Yeoman",
+		"Selenium",
+		"RESTful",
+		"QA",
+		"XML",
+		"Behaviour",
+		"Driven",
+		"documentation",
+		"declarative",
+		"builder",
+		"generator"
+	],
+	"scripts": {
+		"test": "lib/index.js"
+	},
+	"bugs": {
+		"url": "https://github.com/apigeek/project/issues",
+		"email": "bugs@apigeek.me"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/apigeek/blueprint-openapi-tests.git"
+	},
+	"author": "lee.curtis@troven.com.au",
+	"license": "Apache-2.0",
+	"dependencies": {
+	}
+}

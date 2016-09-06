@@ -4,12 +4,18 @@ Feature: Variables
 
     Given I am configured
     And I set x = ok
-    Then I assert this.targets.google
+    Then I assert this.targets.default
 
-  Scenario: Scoped Var Test
+  Scenario: Scoped Variable
 
     Given I am scoped
     Then I assert this.vars.x=="ok"
+
+  Scenario: Clear Variables
+
+    Given I am forgetful
+    And I clear variables
+    Then I assert this.vars.x!="ok"
 
   Scenario: Test Variable Assignment
 

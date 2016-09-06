@@ -1,4 +1,9 @@
 {
+	"blueprint": {
+		"from": "blueprints",
+		"to": "tmp/build"
+	},
+	"files": "./features/files",
 	"targets": {
 		"google": {
 			"protocol": "https",

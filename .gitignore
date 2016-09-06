@@ -16,6 +16,8 @@ test.mock
 tmp
 notes
 dialects
+private
+apigeeks.json
 
 test/google/archive/
 

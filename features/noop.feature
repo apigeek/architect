@@ -1,4 +1,4 @@
-Feature: Not Operational
+Feature: Test Laziness
 
   Scenario: Always successful
 	Given I am testing 'pass'
@@ -7,10 +7,10 @@ Feature: Not Operational
    Scenario: Wait for 1 second
 	Given I am testing 'wait'
 	And I wait 1 second
-	Then I pass
+	Then I succeed
 
 @skip
-  Scenario: I break thing
+  Scenario: I break things
     Given I am silently ignored
     Then I fail
 

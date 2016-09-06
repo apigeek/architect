@@ -12,18 +12,13 @@ Feature: An Example
   And error example works
   Then I succeed
 
-  Scenario: Trivial Test
-
-    Given I am testing
-    When debug test works
-    And log test works
-    And error test works
-    And I dump
-    Then I assert this.name == "scenario"
-
 @skip
   Scenario: Skip Broken Story
-
     Given I am broken
+    Then I fail
+
+@bug=skip unless debugging
+  Scenario: Skip Debug Story
+    Given I am a bug
     Then I fail
 

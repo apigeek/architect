@@ -1,0 +1,48 @@
+<html>
+<head>
+
+</head>
+<body>
+
+
+<h1>{{openapi.info.title}}</h1>
+<h3>{{pkg.name}}</h3>
+
+<div class='info' id='api_info'>
+    {{#if openapi.info}}
+    <div class="info_title">{{{sanitize openapi.info.title}}}</div>
+    <div class="info_description markdown">{{{sanitize openapi.info.description}}}</div>
+    {{#if externalDocs}}
+    <p>{{{sanitize externalDocs.description}}}</p>
+    <a href="{{{escape externalDocs.url}}}" target="_blank">{{{escape externalDocs.url}}}</a>
+    {{/if}}
+    {{#if openapi.info.termsOfServiceUrl}}<div class="info_tos"><a target="_blank" href="{{{escape openapi.info.termsOfServiceUrl}}}" data-sw-translate>Terms of service</a></div>{{/if}}
+    {{#if openapi.info.contact.name}}<div><div class='info_name' style="display: inline" data-sw-translate>Created by </div> {{{escape openapi.info.contact.name}}}</div>{{/if}}
+    {{#if openapi.info.contact.url}}<div class='info_url' data-sw-translate>See more at <a href="{{{escape openapi.info.contact.url}}}">{{{escape openapi.info.contact.url}}}</a></div>{{/if}}
+    {{#if openapi.info.contact.email}}<div class='info_email'><a target="_parent" href="mailto:{{{escape openapi.info.contact.email}}}?subject={{{escape openapi.info.title}}}" data-sw-translate>Contact the developer</a></div>{{/if}}
+    {{#if openapi.info.license}}<div class='info_license'><a target="_blank" href='{{{escape openapi.info.license.url}}}'>{{{escape openapi.info.license.name}}}</a></div>{{/if}}
+    {{/if}}
+</div>
+<div class='container' id='resources_container'>
+    <div class='authorize-wrapper'></div>
+
+    <ul id='resources'>
+    {{#each openapi.paths}}
+        {{>resource}}
+    {{/each}}
+    </ul>
+
+    <div class="footer">
+        <h4 style="color: #999">[ <span style="font-variant: small-caps">base url</span>: {{{escape basePath}}}
+            {{#if openapi.info.version}}
+            , <span style="font-variant: small-caps" data-sw-translate>api version</span>: {{{escape openapi.info.version}}}
+            {{/if}}]
+            {{#if validatorUrl}}
+    <span style="float:right"><a target="_blank" href="{{{escape validatorUrl}}}/debug?url={{{escape url}}}"><img id="validator" src="{{{escape validatorUrl}}}?url={{{escape url}}}"></a>
+    </span>
+            {{/if}}
+        </h4>
+    </div>
+</div>
+</body>
+</html>
