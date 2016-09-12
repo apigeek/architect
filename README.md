@@ -86,7 +86,9 @@ You can influence what ApiGeek:Architect understands using @dialect annotations.
 I want to test-drive ApiGeek:Architect
 ======================================
 
-ApiGeek:Architect is built using NodeJS. If you're new to node, pre-read [Getting Started](https://www.npmjs.com/package/ApiGeek-dialect/tutorial).
+ApiGeek:Architect is built using NodeJS. 
+
+If you're new to NodeJS, pre-read [Installing Node](https://docs.npmjs.com/getting-started/installing-node).
 
 You install ApiGeek:Architect as a system-wide CLI command:
 
@@ -96,11 +98,11 @@ To run it simply type:
 
 	$ apigeek
 
-However, It won't do much else until we provide some feature scenarios.
+However, it won't do much else until we provide some feature scenarios.
 
-By default, ApiGeek:Architect looks for ".feature" files recursively, starting in the current directory.
+By default, ApiGeek:Architect looks for ".feature" files recursively, by default they're stored in the "./features/" directory.
 
-I want to create my first feature
+I want to create my first Feature
 =================================
 
 1) To quickly create a few examples in the ./features folder, type:

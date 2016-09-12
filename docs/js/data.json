@@ -1,0 +1,46 @@
+{
+    "project": {},
+    "files": {
+        "lib/daemon.js": {
+            "name": "lib/daemon.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/index.js": {
+            "name": "lib/index.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {},
+    "elements": {},
+    "classitems": [
+        {
+            "file": "lib/daemon.js",
+            "line": 3,
+            "description": "ApiGeek: Architect\n\nAPI-based Micro-Service\n\n(c) Lee Curtis 2016 (c) Troven 2009-2015. Apache Licensed.",
+            "class": ""
+        },
+        {
+            "file": "lib/index.js",
+            "line": 3,
+            "description": "ApiGeek: Architect\n\nCommand Line launcher\n\n(c) Lee Curtis 2016 (c) Troven 2009-2015. Apache Licensed.",
+            "class": ""
+        }
+    ],
+    "warnings": [
+        {
+            "message": "Missing item type\nApiGeek: Architect\n\nAPI-based Micro-Service\n\n(c) Lee Curtis 2016 (c) Troven 2009-2015. Apache Licensed.",
+            "line": " lib/daemon.js:3"
+        },
+        {
+            "message": "Missing item type\nApiGeek: Architect\n\nCommand Line launcher\n\n(c) Lee Curtis 2016 (c) Troven 2009-2015. Apache Licensed.",
+            "line": " lib/index.js:3"
+        }
+    ]
+}
