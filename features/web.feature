@@ -1,6 +1,6 @@
 @cookies
 @dialects=webapi
-
+@skip
 Feature: Simple HTTP
 
 Background: Google Scenarios

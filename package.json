@@ -33,7 +33,7 @@
     "generator"
   ],
   "scripts": {
-    "test": "apigeek --timeout 30000"
+    "test": "lib/index.js"
   },
   "bugs": {
     "url": "https://github.com/apigeek/project/issues",
