@@ -1,0 +1,27 @@
+<div class='heading'>
+    <h2>
+        <a href='#!/{{{@../key}}}' class="toggleEndpointList" data-id="{{{@key}}}">{{{sanitize @key}}}</a> {{@../key}}
+    </h2>
+    <p>{{description}}</p>
+    <ul class='options'>
+        <li>
+            <a href='#!/{{{@key}}}' id='endpointListTogger_{{{@key}}}' class="toggleEndpointList" data-id="{{{@key}}}" data-sw-translate>Show/Hide</a>
+        </li>
+        <li>
+            <a href='#' class="collapseResource" data-id="{{{@key}}}" data-sw-translate>
+                List Operations
+            </a>
+        </li>
+        <li>
+            <a href='#' class="expandResource" data-id="{{{@key}}}" data-sw-translate>
+                Expand Operations
+            </a>
+        </li>
+        {{#if url}}
+            <li>
+                <a href='{{{sanitize url}}}' data-sw-translate>Raw</a>
+            </li>
+        {{/if}}
+    </ul>
+</div>
+<ul c

@@ -1,13 +1,13 @@
-Feature: Generate Test Cases for example.com
-  As a project architect I want to employ enterprise best practices
-  to instantiate a executable API runtime and governance framework.
+Feature: Build an example website
+  As a geek I want to be automated so I can be l33t
 
-  Scenario: BDD Test Cases for OpenAPI
+  Scenario: Example Blueprint
 
-    Given I load context from JSON project.json
-    And I load openapi from YAML swagger.yaml
-    When I build openapi-tests
-    Then folder ../../tmp/build/openapi-tests should exist
-    And file ../../tmp/build/openapi-tests/index.html should contain Hello World API
-    And folder ../../tmp/build/openapi-tests/features/ should exist
-    And file ../../tmp/build/openapi-tests/apigeek.json should contain example.com
+    Given I am a blueprint
+    And I set greeting to hello
+    And I set audience to world
+    When I build example
+    Then folder ../../target/example should exist
+    And file ../../target/example/index.html should contain hello blueprint
+    And file ../../target/example/hello.html should contain hello world
+    And file ../../target/example/features/blueprint.feature should exist

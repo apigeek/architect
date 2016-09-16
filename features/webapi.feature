@@ -1,13 +1,11 @@
 @cookies
 @dialects=webapi
-Feature: Google is accessible
 
-  Background: Googling
+Feature: 404: Page Not Found
 
-    Given I am googling
+@skip
+Scenario: 404
 
-  Scenario: Request Google homepage - with redirects
-
-    Given I enable redirects
-    When I GET http://google.com
-    Then response code should be 200
+  Given I enable redirects
+  When I GET http://404.apigeek.me
+  Then response code should be 404

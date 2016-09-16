@@ -1,7 +1,10 @@
 {
 	"blueprint": {
-		"from": "blueprints",
-		"to": "tmp/build"
+		"from": "./blueprints",
+		"to": "target"
+	},
+	"vars": {
+		"bonjour": "monde"
 	},
 	"files": "./features/files",
 	"targets": {

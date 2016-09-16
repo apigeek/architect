@@ -1,0 +1,48 @@
+{
+	"name": "blueprint-example",
+	"version": "0.0.1",
+	"description": "Blueprint Example",
+	"main": "lib/index.js",
+	"directories": {
+		"doc": "docs",
+		"templates": "templates",
+		"assets": "assets"
+	},
+	"keywords": [
+		"openapi",
+		"swagger",
+		"scripting",
+		"docs",
+		"mocha",
+		"chai",
+		"mocha",
+		"gherkin",
+		"BDD",
+		"Specification",
+		"Natural Language",
+		"Test",
+		"API",
+		"Yeoman",
+		"Selenium",
+		"RESTful",
+		"QA",
+		"XML",
+		"Behaviour",
+		"Driven",
+		"documentation",
+		"declarative",
+		"builder",
+		"generator"
+	],
+	"scripts": {
+		"test": "lib/index.js"
+	},
+	"bugs": {
+	},
+	"repository": {
+	},
+	"author": "noone@apigeek.me",
+	"license": "Apache-2.0",
+	"dependencies": {
+	}
+}
