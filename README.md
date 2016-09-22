@@ -1,4 +1,4 @@
-![ApiGeek](docs/favicon.png) ![CI](https://travis-ci.org/apigeek/architect.svg?branch=master) ![version](https://img.shields.io/github/release/apigeek/architect.svg?maxAge=2592000) ![dependencies](https://img.shields.io/david/apigeek/architect.svg?maxAge=2592000) ![apigeeks](https://img.shields.io/badge/apigeeks-are%20awesome-800080.svg)
+![ApiGeek](docs/favicon.png) ![CI](https://travis-ci.org/apigeek/architect.svg?branch=master) ![version](https://img.shields.io/github/release/apigeek/architect.svg?maxAge=2592000) ![dependencies](https://img.shields.io/david/apigeek/architect.svg?maxAge=2592000) ![apigeeks](https://img.shields.io/badge/apigeeks-are%20awesome-800080.svg) [![NPM](https://nodei.co/npm/apigeek-architect.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/apigeek-architect/)
 
 Executable English for Agile Software Teams
 ===========================================
