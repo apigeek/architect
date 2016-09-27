@@ -52,7 +52,7 @@
   "dependencies": {
     "apigeek-dialect": "^1.1.0",
     "apigeek-dialect-blueprint": "^0.2.0",
-    "apigeek-dialect-webapi": "^1.0.0",
+    "apigeek-dialect-webapi": "^1.0.7",
     "apigeek-dialect-webapp": "^1.8.0",
     "assert": "^1.4.1",
     "aws-sdk": "^2.5.5",
