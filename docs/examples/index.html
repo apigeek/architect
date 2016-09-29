@@ -39,14 +39,13 @@
     <h3><small>[devdocs.feature]</small> </h3>
     <p>Build as-built developer documentation</p>
 
-    <h4>Test Plan Docs</h4>
+    <h4>Build Feature Docs</h4>
 
     <pre><code class="gherkin">
-    Scenario: Test Plan Docs
+    Scenario: Build Feature Docs
         Given I am Self-Test Features
         And I find .feature in folder ../ as files
-        And I dump
-        And I delete folder ../../target/test-plans
+        And I delete folder ../../docs/examples
         And I build test-plan as ../docs/examples
 </code></pre>
 
