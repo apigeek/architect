@@ -64,6 +64,9 @@
     "underscore": "^1.8.3"
   },
   "devDependencies": {
-    "grunt-contrib-yuidoc": "^1.0.0"
+    "grunt": "^1.0.1",
+    "grunt-contrib-yuidoc": "^1.0.0",
+    "grunt-license": "^0.1.5",
+    "grunt-licensechecker": "^0.1.3"
   }
 }
