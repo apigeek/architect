@@ -313,7 +313,9 @@ If you need support to build or debug your community Blueprints or Dialects, ple
 I want to license ApiGeek:Architect
 ===================================
 
-This software is licensed under the Apache 2 license, quoted below.
+This software is licensed under the Apache 2 license.
+
+Additional licenses and contributions are included in this software distribution, see [THIRD_PARTY] for more details.
 
 Copyright 2015-2016 Lee Curtis & Troven 2009-2015
 
@@ -328,4 +330,6 @@ distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
 WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 License for the specific language governing permissions and limitations under
 the License.
+
+
 
