@@ -58,8 +58,6 @@ You can download pre-packaged vocabularies (called Dialects) and/or roll your ow
 I want to see a working example
 ===============================
 
-ApiGeek:Architect's features are collections of scenarios. 
-
 To improve readability, the keyword AND can be used instead in place of the verbs above.
 
 You can influence what ApiGeek:Architect understands using @dialect annotations.
@@ -82,6 +80,8 @@ You can influence what ApiGeek:Architect understands using @dialect annotations.
 	    Given I disable redirects
 	    When I GET http://google.com
 	    Then response code should be 3xx
+
+[View more .feature examples](docs/examples/).
 
 I want to test-drive ApiGeek:Architect
 ======================================
@@ -139,6 +139,9 @@ I want to learn some vocabulary
 ===============================
 
 ApiGeek:Architect ships with few default vocabularies - variables, files, web apis, web apps, etc. 
+
+Try out the included [.feature examples](docs/examples/) - they cover a range of powerful use cases.
+
 
 To discover what phrases exist in the vocabularies, type:
 
@@ -313,9 +316,7 @@ If you need support to build or debug your community Blueprints or Dialects, ple
 I want to license ApiGeek:Architect
 ===================================
 
-This software is licensed under the Apache 2 license.
-
-Additional licenses and contributions are included in this software distribution, see [THIRD_PARTY] for more details.
+This software is licensed under the Apache 2 license, quoted below.
 
 Copyright 2015-2016 Lee Curtis & Troven 2009-2015
 
@@ -330,6 +331,4 @@ distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
 WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 License for the specific language governing permissions and limitations under
 the License.
-
-
 
