@@ -1,7 +1,7 @@
 <html>
 <head>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/hybrid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/vs.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/gherkin.min.js"></script>
 
@@ -10,357 +10,357 @@
 </head>
 
 <body class="container">
-<h1>Self-Test Features</h1>
+<h1>Example Features</h1>
 <p>The following Features/Scenarios are included as part of the test suite</p>
 
-<div class="container">
-    <h3>Build an example website </h3>
-    <h3><small>[blueprint.feature]</small> </h3>
+<a name="blueprint.feature"></a>
+<h3>Build an example website <small class="pull-right">[blueprint.feature]</small> </h3>
+<div class="well">
     <p>As a geek I want to be automated so I can be l33t</p>
 
+    <a name="blueprint.feature_0"></a>
     <h4>Example Blueprint</h4>
-
     <pre><code class="gherkin">
-    Scenario: Example Blueprint
-        Given I am a blueprint
-        And I set greeting to hello
-        And I set audience to world
-        When I build example
-        Then folder ../../target/example should exist
-        And file ../../target/example/index.html should contain hello blueprint
-        And file ../../target/example/hello.html should contain hello world
-        And file ../../target/example/features/blueprint.feature should exist
+Scenario: Example Blueprint
+    Given I am a blueprint
+    And I set greeting to hello
+    And I set audience to world
+    When I build example
+    Then folder ../../target/example should exist
+    And file ../../target/example/index.html should contain hello blueprint
+    And file ../../target/example/hello.html should contain hello world
+    And file ../../target/example/features/blueprint.feature should exist
 </code></pre>
 
 </div>
-
-<div class="container">
-    <h3>Dev Documentation </h3>
-    <h3><small>[devdocs.feature]</small> </h3>
+<hr/>
+<a name="devdocs.feature"></a>
+<h3>Dev Documentation <small class="pull-right">[devdocs.feature]</small> </h3>
+<div class="well">
     <p>Build as-built developer documentation</p>
 
+    <a name="devdocs.feature_0"></a>
     <h4>Build Feature Docs</h4>
-
     <pre><code class="gherkin">
-    Scenario: Build Feature Docs
-        Given I am Self-Test Features
-        And I find .feature in folder ../ as files
-        And I delete folder ../../docs/examples
-        And I build test-plan as ../docs/examples
+Scenario: Build Feature Docs
+    Given I am Example Features
+    And I find .feature in folder ../ as files
+    And I delete folder ../../docs/examples
+    And I build test-plan as ../docs/examples
 </code></pre>
 
 </div>
+<hr/>
+<a name="example.feature"></a>
+<h3>An Example <small class="pull-right">[example.feature]</small> </h3>
+<div class="well">
 
-<div class="container">
-    <h3>An Example </h3>
-    <h3><small>[example.feature]</small> </h3>
-
+    <a name="example.feature_0"></a>
     <h4>Trivial Example</h4>
-
     <pre><code class="gherkin">
     @example=true
-    Scenario: Trivial Example
-        Given I am an example
-        When debug example works
-        And log example works
-        And error example works
-        Then I succeed
+Scenario: Trivial Example
+    Given I am an example
+    When debug example works
+    And log example works
+    And error example works
+    Then I succeed
 </code></pre>
+    <a name="example.feature_1"></a>
     <h4>Skip Broken Story</h4>
-
     <pre><code class="gherkin">
     @skip=true
-    Scenario: Skip Broken Story
-        Given I am broken
-        Then I fail
+Scenario: Skip Broken Story
+    Given I am broken
+    Then I fail
 </code></pre>
+    <a name="example.feature_2"></a>
     <h4>Skip Debug Story</h4>
-
     <pre><code class="gherkin">
     @bug=skip unless debugging
-    Scenario: Skip Debug Story
-        Given I am a bug
-        Then I fail
+Scenario: Skip Debug Story
+    Given I am a bug
+    Then I fail
 </code></pre>
 
 </div>
+<hr/>
+<a name="files.feature"></a>
+<h3>file handling <small class="pull-right">[files.feature]</small> </h3>
+<div class="well">
 
-<div class="container">
-    <h3>file handling </h3>
-    <h3><small>[files.feature]</small> </h3>
-
+    <a name="files.feature_0"></a>
     <h4>hello_world file is readable</h4>
-
     <pre><code class="gherkin">
-    Scenario: hello_world file is readable
-        Given I am testing existing files
-        And I load test from hello_world.json
-        Then file hello_world.json exists
-        And variable test should exist
-        And $.hello in test should match world
+Scenario: hello_world file is readable
+    Given I am testing existing files
+    And I load test from hello_world.json
+    Then file hello_world.json exists
+    And variable test should exist
+    And $.hello in test should match world
 </code></pre>
+    <a name="files.feature_1"></a>
     <h4>bye_bye_world file does not exist</h4>
-
     <pre><code class="gherkin">
-    Scenario: bye_bye_world file does not exist
-        Given I am testing missing files
-        Then file bye_bye_world.json does not exist
+Scenario: bye_bye_world file does not exist
+    Given I am testing missing files
+    Then file bye_bye_world.json does not exist
 </code></pre>
+    <a name="files.feature_2"></a>
     <h4>create bye_bye_world file</h4>
-
     <pre><code class="gherkin">
-    Scenario: create bye_bye_world file
-        Given I am testing creating files
-        And I load test from hello_world.json
-        And variable test should exist
-        And I set test.hello to earth
-        And $.hello in test should match earth
-        When I write test to bye_bye_world.json
-        Then file bye_bye_world.json exists
+Scenario: create bye_bye_world file
+    Given I am testing creating files
+    And I load test from hello_world.json
+    And variable test should exist
+    And I set test.hello to earth
+    And $.hello in test should match earth
+    When I write test to bye_bye_world.json
+    Then file bye_bye_world.json exists
 </code></pre>
+    <a name="files.feature_3"></a>
     <h4>remove bye_bye_world file</h4>
-
     <pre><code class="gherkin">
-    Scenario: remove bye_bye_world file
-        Given I am testing deleting files
-        And file bye_bye_world.json exists
-        And I load test from bye_bye_world.json
-        And variable test should exist
-        And $.hello in test should match earth
-        When I delete file bye_bye_world.json
-        Then file bye_bye_world.json does not exist
+Scenario: remove bye_bye_world file
+    Given I am testing deleting files
+    And file bye_bye_world.json exists
+    And I load test from bye_bye_world.json
+    And variable test should exist
+    And $.hello in test should match earth
+    When I delete file bye_bye_world.json
+    Then file bye_bye_world.json does not exist
 </code></pre>
 
 </div>
+<hr/>
+<a name="jscript.feature"></a>
+<h3>Javascript is working <small class="pull-right">[jscript.feature]</small> </h3>
+<div class="well">
 
-<div class="container">
-    <h3>Javascript is working </h3>
-    <h3><small>[jscript.feature]</small> </h3>
-
+    <a name="jscript.feature_0"></a>
     <h4>Inline Javascript</h4>
-
     <pre><code class="gherkin">
-    Scenario: Inline Javascript
-        Given I am testing javascript
-        When I execute return this.targets.google.hostname&#x3D;&#x3D;&quot;google.com&quot;;
+Scenario: Inline Javascript
+    Given I am testing javascript
+    When I execute return this.targets.google.hostname&#x3D;&#x3D;&quot;google.com&quot;;
 </code></pre>
+    <a name="jscript.feature_1"></a>
     <h4>Multi-line Javascript</h4>
-
     <pre><code class="gherkin">
-    Scenario: Multi-line Javascript
-        Given I am testing more javascript
-        When I execute
+Scenario: Multi-line Javascript
+    Given I am testing more javascript
+    When I execute
 return this.targets.google.protocol&#x3D;&#x3D;&quot;https&quot;;
 </code></pre>
 
 </div>
+<hr/>
+<a name="noop.feature"></a>
+<h3>Test Laziness <small class="pull-right">[noop.feature]</small> </h3>
+<div class="well">
 
-<div class="container">
-    <h3>Test Laziness </h3>
-    <h3><small>[noop.feature]</small> </h3>
-
+    <a name="noop.feature_0"></a>
     <h4>Always successful</h4>
-
     <pre><code class="gherkin">
-    Scenario: Always successful
-        Given I am testing &#x27;pass&#x27;
-        Then I pass
+Scenario: Always successful
+    Given I am testing &#x27;pass&#x27;
+    Then I pass
 </code></pre>
+    <a name="noop.feature_1"></a>
     <h4>Wait for 1 second</h4>
-
     <pre><code class="gherkin">
-    Scenario: Wait for 1 second
-        Given I am testing &#x27;wait&#x27;
-        And I wait 1 second
-        Then I succeed
+Scenario: Wait for 1 second
+    Given I am testing &#x27;wait&#x27;
+    And I wait 1 second
+    Then I succeed
 </code></pre>
+    <a name="noop.feature_2"></a>
     <h4>I break things</h4>
-
     <pre><code class="gherkin">
     @skip=true
-    Scenario: I break things
-        Given I am silently ignored
-        Then I fail
+Scenario: I break things
+    Given I am silently ignored
+    Then I fail
 </code></pre>
+    <a name="noop.feature_3"></a>
     <h4>I have a bug</h4>
-
     <pre><code class="gherkin">
     @bug=JIRA_SAMPLE_ID
-    Scenario: I have a bug
-        Given I am misbehaving
-        Then I fail
+Scenario: I have a bug
+    Given I am misbehaving
+    Then I fail
 </code></pre>
+    <a name="noop.feature_4"></a>
     <h4>I do nothing</h4>
-
     <pre><code class="gherkin">
     @todo=STORY_SAMPLE_ID
-    Scenario: I do nothing
-        Given I am a work-in-progress
-        Then I fail
+Scenario: I do nothing
+    Given I am a work-in-progress
+    Then I fail
 </code></pre>
 
 </div>
+<hr/>
+<a name="vars.feature"></a>
+<h3>Variables <small class="pull-right">[vars.feature]</small> </h3>
+<div class="well">
 
-<div class="container">
-    <h3>Variables </h3>
-    <h3><small>[vars.feature]</small> </h3>
-
+    <a name="vars.feature_0"></a>
     <h4>Global Var</h4>
-
     <pre><code class="gherkin">
-    Scenario: Global Var
-        Given I am configured
-        Then bonjour should exist
-        And I dump
-        And bonjour equals monde
+Scenario: Global Var
+    Given I am configured
+    Then bonjour should exist
+    And I dump
+    And bonjour equals monde
 </code></pre>
+    <a name="vars.feature_1"></a>
     <h4>Config Test</h4>
-
     <pre><code class="gherkin">
-    Scenario: Config Test
-        Given I am configured
-        And I set x &#x3D; ok
-        Then I assert this.targets.default
+Scenario: Config Test
+    Given I am configured
+    And I set x &#x3D; ok
+    Then I assert this.targets.default
 </code></pre>
+    <a name="vars.feature_2"></a>
     <h4>Scoped Variable</h4>
-
     <pre><code class="gherkin">
-    Scenario: Scoped Variable
-        Given I am scoped
-        Then I assert this.vars.x&#x3D;&#x3D;&quot;ok&quot;
+Scenario: Scoped Variable
+    Given I am scoped
+    Then I assert this.vars.x&#x3D;&#x3D;&quot;ok&quot;
 </code></pre>
+    <a name="vars.feature_3"></a>
     <h4>Clear Variables</h4>
-
     <pre><code class="gherkin">
-    Scenario: Clear Variables
-        Given I am forgetful
-        And I clear variables
-        Then I assert this.vars.x!&#x3D;&quot;ok&quot;
+Scenario: Clear Variables
+    Given I am forgetful
+    And I clear variables
+    Then I assert this.vars.x!&#x3D;&quot;ok&quot;
 </code></pre>
+    <a name="vars.feature_4"></a>
     <h4>Test Variable Assignment</h4>
-
     <pre><code class="gherkin">
-    Scenario: Test Variable Assignment
-        Given I am testing dialect
-        And I set test to hello
-        Then variable test should match hello
+Scenario: Test Variable Assignment
+    Given I am testing dialect
+    And I set test to hello
+    Then variable test should match hello
 </code></pre>
+    <a name="vars.feature_5"></a>
     <h4>Test CSV sample</h4>
-
     <pre><code class="gherkin">
-    Scenario: Test CSV sample
-        Given I am testing CSV parsing
-        And some CSV as test:
+Scenario: Test CSV sample
+    Given I am testing CSV parsing
+    And some CSV as test:
 what, who
 hello, world
 greetings, earthling
-        Then $.[0].what in test should match hello
-        And $.[0].who in test should match world
-        And $.[1].what in test should match greetings
-        And $.[1].who in test should match earthling
+    Then $.[0].what in test should match hello
+    And $.[0].who in test should match world
+    And $.[1].what in test should match greetings
+    And $.[1].who in test should match earthling
 </code></pre>
+    <a name="vars.feature_6"></a>
     <h4>Test set body JSON sample - indirect via variable</h4>
-
     <pre><code class="gherkin">
-    Scenario: Test set body JSON sample - indirect via variable
-        Given I am testing JSON
-        And  I set test to JSON:
+Scenario: Test set body JSON sample - indirect via variable
+    Given I am testing JSON
+    And  I set test to JSON:
 { &quot;hello&quot;: &quot;world&quot;, &quot;earth&quot;: { &quot;moon&quot;: &quot;cheese&quot; } }
-        Then hello in test should match world
-        And earth.moon in test should match cheese
-        Then I assert this.vars.test.hello&#x3D;&#x3D;&quot;world&quot;
-        And I assert this.vars.test.earth.moon&#x3D;&#x3D;&quot;cheese&quot;
+    Then hello in test should match world
+    And earth.moon in test should match cheese
+    Then I assert this.vars.test.hello&#x3D;&#x3D;&quot;world&quot;
+    And I assert this.vars.test.earth.moon&#x3D;&#x3D;&quot;cheese&quot;
 </code></pre>
 
 </div>
+<hr/>
+<a name="web.feature"></a>
+<h3>Simple HTTP <small class="pull-right">[web.feature]</small> </h3>
+<div class="well">
 
-<div class="container">
-    <h3>Simple HTTP </h3>
-    <h3><small>[web.feature]</small> </h3>
-
+    <a name="web.feature_0"></a>
     <h4>Google - with redirects</h4>
-
     <pre><code class="gherkin">
-    Scenario: Google - with redirects
-        Given I am googling
-        Given I enable redirects
-        When I GET http://google.com
-        Then response code should be 200
+Scenario: Google - with redirects
+    Given I am googling
+    Given I enable redirects
+    When I GET http://google.com
+    Then response code should be 200
 </code></pre>
+    <a name="web.feature_1"></a>
     <h4>Google - no redirect</h4>
-
     <pre><code class="gherkin">
     @target=google
-    Scenario: Google - no redirect
-        Given I am googling
-        Given I disable redirects
-        When I GET /
-        Then response code should be 3xx
+Scenario: Google - no redirect
+    Given I am googling
+    Given I disable redirects
+    When I GET /
+    Then response code should be 3xx
 </code></pre>
+    <a name="web.feature_2"></a>
     <h4>Example.com</h4>
-
     <pre><code class="gherkin">
     @target=example
-    Scenario: Example.com
-        Given I am googling
-        Given I am browsing example.com
-        When I GET /
-        Then response body should contain Example Domain
+Scenario: Example.com
+    Given I am googling
+    Given I am browsing example.com
+    When I GET /
+    Then response body should contain Example Domain
 </code></pre>
 
 </div>
+<hr/>
+<a name="webapi.feature"></a>
+<h3>404: Page Not Found <small class="pull-right">[webapi.feature]</small> </h3>
+<div class="well">
 
-<div class="container">
-    <h3>404: Page Not Found </h3>
-    <h3><small>[webapi.feature]</small> </h3>
-
+    <a name="webapi.feature_0"></a>
     <h4>404</h4>
-
     <pre><code class="gherkin">
-    Scenario: 404
-        Given I enable redirects
-        When I GET http://localhost/404/not/found
-        Then response code should be 404
+Scenario: 404
+    Given I enable redirects
+    When I GET http://localhost/404/not/found
+    Then response code should be 404
 </code></pre>
 
 </div>
+<hr/>
+<a name="webapp.feature"></a>
+<h3>Robot Web Browser <small class="pull-right">[webapp.feature]</small> </h3>
+<div class="well">
 
-<div class="container">
-    <h3>Robot Web Browser </h3>
-    <h3><small>[webapp.feature]</small> </h3>
-
+    <a name="webapp.feature_0"></a>
     <h4>Google on Firefox</h4>
-
     <pre><code class="gherkin">
     @dialect=webapp
-    Scenario: Google on Firefox
-        Given I use firefox browser
-        When I visit /
-        When I type apigeek-architect into q
-        When I click btnG
-        When I wait until page is apigeek-architect - Google Search
-        Then I stop using browser
-        Then dump
+Scenario: Google on Firefox
+    Given I use firefox browser
+    When I visit /
+    When I type apigeek-architect into q
+    When I click btnG
+    When I wait until page is apigeek-architect - Google Search
+    Then I stop using browser
+    Then dump
 </code></pre>
 
 </div>
+<hr/>
+<a name="zip.feature"></a>
+<h3>ZIP handling <small class="pull-right">[zip.feature]</small> </h3>
+<div class="well">
 
-<div class="container">
-    <h3>ZIP handling </h3>
-    <h3><small>[zip.feature]</small> </h3>
-
+    <a name="zip.feature_0"></a>
     <h4>Create a zip file</h4>
-
     <pre><code class="gherkin">
-    Scenario: Create a zip file
-        Given I am a zip-test
-        And I delete file ../../target/example.zip
-        And I zip ../../target/example to ../../target/example.zip
-        Then file ../../target/example.zip exists
+Scenario: Create a zip file
+    Given I am a zip-test
+    And I delete file ../../target/example.zip
+    And I zip ../../target/example to ../../target/example.zip
+    Then file ../../target/example.zip exists
 </code></pre>
 
 </div>
-
+<hr/>
 
 </body>
 </html>
