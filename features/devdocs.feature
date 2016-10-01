@@ -6,3 +6,4 @@ Feature: Dev Documentation
     And I find .feature in folder ../ as files
     And I delete folder ../../docs/examples
     And I build test-plan as ../docs/examples
+    Then file ../../docs/examples/index.html should exist
