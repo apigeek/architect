@@ -1,7 +1,8 @@
 {
-	"blueprint": {
-		"from": "./blueprints",
-		"to": "target"
+	"paths": {
+		"files": "./features/files",
+		"blueprints": "./blueprints",
+		"target": "./target"
 	},
 	"vars": {
 		"bonjour": "monde"

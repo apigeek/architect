@@ -6,8 +6,8 @@ Feature: Build an example website
     Given I am a blueprint
     And I set greeting to hello
     And I set audience to world
-    When I build example
-    Then folder ../../target/example should exist
-    And file ../../target/example/index.html should contain hello blueprint
-    And file ../../target/example/hello.html should contain hello world
-    And file ../../target/example/features/blueprint.feature should exist
+    When I build example as .
+    Then target folder . should exist
+    And target file index.html should contain hello blueprint
+    And target file hello.html should contain hello world
+    And target file features/blueprint.feature should exist
