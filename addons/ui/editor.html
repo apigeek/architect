@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" integrity="sha256-obZACiHd7gkOk9iIL/pimWMTJ4W/pBsKu+oZnSeBIek=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <script src="https://rawgithub.com/ajaxorg/ace-builds/master/src/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://rawgithub.com/ajaxorg/ace-builds/master/src/ext-language_tools.js" type="text/javascript" charset="utf-8"></script>
+
+
+    <title>ApiGeek: IDE</title>
+    <style> .clickable { cursor: pointer; } </style>
+    <style type="text/css" media="screen">
+        #editor {
+            width: 100%;
+            height: 500px;
+        }
+        #cli {
+            background: #5A83BC;
+            position: absolute;
+            bottom: 10px;
+            height: 64px;
+            width: 100%;
+        }
+        #results {
+            background: #F0F0F0;
+            height: 400px;
+        }
+        body {
+            padding-top: 56px;
+        }
+        .logo {
+            padding: 10px 0px 8px 8px;
+        }
+        .result-title {
+            padding-left: 8px;
+            color: #333333;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <div class="row">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-header"><img class="logo pull-left" width="32" src="/ui/img/logo.png"/><a class="navbar-brand" href="#">ApiGeek</a>
+                <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#">Edit</a></li>
+                    <li><a href="#">Configure</a></li>
+                    <li><a href="#">Results</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="row">
+            <div class="panel">
+                <div class="panel-heading">
+                    <pre>./tests/demo.feature</pre>
+                </div>
+                <div class="panel-body">
+
+                    <div class="col-md-6">
+                        <div id="editor">
+Feature: Javascript is working
+
+Scenario: Inline Javascript
+
+Given I am testing javascript
+When I execute return (2+2)==4;
+
+
+Scenario: Multi-line Javascript
+
+Given I am testing more javascript
+When I execute x
+--------
+return (2+4)==6;
+--------
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="btn-toolbar">
+                            <div class="btn-groupx">
+                                <button class="btn btn-default" data-original-title="Settings" title="Settings"><i class="glyphicon glyphicon-cog"></i></button>
+                                <button class="btn-play btn btn-default" data-original-title="Test Run"><i class="glyphicon glyphicon-play"></i>&nbsp;</button>
+                                <button class="btn btn-default" data-original-title="Test Run"><i class="glyphicon glyphicon-check"></i>&nbsp;</button>
+                            </div>
+                            <div class="btn-groupx pull-right">
+                                <button class="btn btn-default" data-original-title="Cancel"><i class="glyphicon glyphicon-trash"></i> </button>
+                            </div>
+                        </div>
+                        <br/>
+
+                        <div class="well">
+                            <ul id="results" class="list-group">
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--<div class="panel-footer">-->
+                    <!--<div id="cli"></div>-->
+                <!--</div>-->
+            </div>
+
+    </div>
+
+</div>
+
+    <script src="js/editor.js"></script>
+</body>
+</html>

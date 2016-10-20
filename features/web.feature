@@ -1,18 +1,17 @@
-@cookies
-@dialects=webapi
-@skip
 Feature: Simple HTTP
 
 Background: Google Scenarios
 
     Given I am googling
 
+@target=google
   Scenario: Google - with redirects
 
     Given I enable redirects
-    When I GET http://google.com
+    When I GET /
     Then response code should be 200
 
+@skip
 @target=google
   Scenario: Google - no redirect
 
@@ -21,6 +20,7 @@ Background: Google Scenarios
     Then response code should be 3xx
 
 
+@skip
 @target=example
   Scenario: Example.com
 

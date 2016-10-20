@@ -282,15 +282,17 @@ Scenario: Test set body JSON sample - indirect via variable
     <a name="web.feature_0"></a>
     <h4>Google - with redirects</h4>
     <pre><code class="gherkin">
+@target=google
 Scenario: Google - with redirects
     Given I am googling
     Given I enable redirects
-    When I GET http://google.com
+    When I GET /
     Then response code should be 200
 </code></pre>
     <a name="web.feature_1"></a>
     <h4>Google - no redirect</h4>
     <pre><code class="gherkin">
+@skip=true
 @target=google
 Scenario: Google - no redirect
     Given I am googling
@@ -301,6 +303,7 @@ Scenario: Google - no redirect
     <a name="web.feature_2"></a>
     <h4>Example.com</h4>
     <pre><code class="gherkin">
+@skip=true
 @target=example
 Scenario: Example.com
     Given I am googling
@@ -347,18 +350,28 @@ Scenario: Google on Firefox
 </div>
 <hr/>
 <a name="zip.feature"></a>
-<h3>ZIP handling <small class="pull-right">[zip.feature]</small> </h3>
+<h3>ZIP / UnZIP Files <small class="pull-right">[zip.feature]</small> </h3>
 <div class="well">
 
     <a name="zip.feature_0"></a>
     <h4>Create a zip file</h4>
     <pre><code class="gherkin">
 Scenario: Create a zip file
-    Given I am a zip-test
+    Given I am zipping-folders
     And I delete file ../../target/example.zip
     And I zip target ./ to ./example.zip
     Then target file ./example.zip exists
-    And file ../../target/example.zip exists
+</code></pre>
+    <a name="zip.feature_1"></a>
+    <h4>Inspect a zip file</h4>
+    <pre><code class="gherkin">
+Scenario: Inspect a zip file
+    Given I am a unzip-test
+    And target file example.zip exists
+    And I read target zip example.zip
+    Then variable zip.entries exists
+    And any $..entryName in zip.entries should match features/blueprint.feature
+    And any $..name in zip.entries should match blueprint.feature
 </code></pre>
 
 </div>

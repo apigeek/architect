@@ -7,7 +7,6 @@
 	"vars": {
 		"bonjour": "monde"
 	},
-	"files": "./features/files",
 	"targets": {
 		"google": {
 			"protocol": "https",

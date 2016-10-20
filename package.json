@@ -50,9 +50,9 @@
     "apigeeks": "lib/daemon.js"
   },
   "dependencies": {
-    "apigeek-dialect": "^1.1.17",
-    "apigeek-dialect-blueprint": "^0.2.7",
-    "apigeek-dialect-webapi": "^1.0.10",
+    "apigeek-dialect": "^1.1.19",
+    "apigeek-dialect-blueprint": "^0.2.8",
+    "apigeek-dialect-webapi": "^1.0.11",
     "apigeek-dialect-webapp": "^1.8.7",
     "assert": "^1.4.1",
     "body-parser": "^1.15.2",
