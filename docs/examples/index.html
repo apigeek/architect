@@ -29,7 +29,6 @@ Scenario: Example Blueprint
     Then target folder . should exist
     And target file index.html should contain hello blueprint
     And target file hello.html should contain hello world
-    And target file features/blueprint.feature should exist
 </code></pre>
 
 </div>
@@ -370,8 +369,8 @@ Scenario: Inspect a zip file
     And target file example.zip exists
     And I read target zip example.zip
     Then variable zip.entries exists
-    And any $..entryName in zip.entries should match features/blueprint.feature
-    And any $..name in zip.entries should match blueprint.feature
+    And any $..entryName in zip.entries should match index.html
+    And any $..name in zip.entries should match index.html
 </code></pre>
 
 </div>

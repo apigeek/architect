@@ -11,5 +11,5 @@ Feature: ZIP / UnZIP Files
     And target file example.zip exists
     And I read target zip example.zip
     Then variable zip.entries exists
-    And any $..entryName in zip.entries should match features/blueprint.feature
-    And any $..name in zip.entries should match blueprint.feature
+    And any $..entryName in zip.entries should match index.html
+    And any $..name in zip.entries should match index.html

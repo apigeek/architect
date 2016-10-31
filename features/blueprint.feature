@@ -10,4 +10,3 @@ Feature: Build an example website
     Then target folder . should exist
     And target file index.html should contain hello blueprint
     And target file hello.html should contain hello world
-    And target file features/blueprint.feature should exist
