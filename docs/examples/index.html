@@ -44,9 +44,9 @@ Scenario: Example Blueprint
 Scenario: Build Feature Docs
     Given I am Example Features
     And I find .feature in folder ../ as files
-    And I delete folder ../../docs/examples
+    And I delete docs folder examples
     And I build test-plan as ../docs/examples
-    Then file ../../docs/examples/index.html should exist
+    Then docs file examples/index.html should exist
 </code></pre>
 
 </div>
@@ -211,7 +211,6 @@ Scenario: I do nothing
 Scenario: Global Var
     Given I am configured
     Then bonjour should exist
-    And I dump
     And bonjour equals monde
 </code></pre>
     <a name="vars.feature_1"></a>

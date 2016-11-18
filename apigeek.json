@@ -1,6 +1,7 @@
 {
 	"paths": {
 		"files": "./features/files",
+		"docs": "./docs",
 		"blueprints": "./blueprints",
 		"target": "./target"
 	},

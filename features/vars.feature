@@ -3,7 +3,6 @@ Feature: Variables
   Scenario: Global Var
 	Given I am configured
 	Then bonjour should exist
-    And I dump
 	And bonjour equals monde
 
   Scenario: Config Test
