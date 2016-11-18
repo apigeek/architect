@@ -3,7 +3,7 @@
 Executable English for Agile Software Teams
 ===========================================
 
-ApiGeek:Architect is an automation and orchestration tool for software teams. 
+ApiGeek:Architect is a testing, automation and orchestration tool for agile software teams. 
 
 Architect uses English as a scripting language to help simplify, standardise and socialise software deliverables. 
 
