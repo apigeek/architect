@@ -2,7 +2,7 @@ Feature: ZIP / UnZIP Files
 
   Scenario: Create a zip file
     Given I am zipping-folders
-    And I delete file ../../target/example.zip
+    And I delete target file example.zip
     And I zip target ./ to ./example.zip
     Then target file ./example.zip exists
 
