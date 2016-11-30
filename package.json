@@ -37,23 +37,23 @@
   },
   "bugs": {
     "url": "https://github.com/apigeek/project/issues",
-    "email": "bugs@apigeek.me"
+    "email": "lcurtis@apigee.com"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/apigeek/architect.git"
   },
-  "author": "lee.curtis@troven.com.au",
+  "author": "lee.curtis@apigee.com",
   "license": "Apache-2.0",
   "bin": {
     "apigeek": "lib/index.js",
     "apigeeks": "lib/daemon.js"
   },
   "dependencies": {
-    "apigeek-dialect": "^1.1.19",
-    "apigeek-dialect-blueprint": "^0.2.8",
-    "apigeek-dialect-webapi": "^1.0.11",
-    "apigeek-dialect-webapp": "^1.8.7",
+    "meta4qa": "^1.1.19",
+    "meta4qa-common": "^1.0.11",
+    "meta4qa-blueprint": "^0.2.8",
+    "meta4qa-webapi": "^1.0.11",
     "assert": "^1.4.1",
     "body-parser": "^1.15.2",
     "debug": "^2.2.0",
