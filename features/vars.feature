@@ -9,7 +9,7 @@ Feature: Variables
 
     Given I am configured
     And I set x = ok
-    Then I assert this.targets.default
+    Then variable x should be ok
 
   Scenario: Scoped Variable
 
@@ -28,7 +28,7 @@ Feature: Variables
     And I set test to hello
     Then variable test should match hello
 
-  Scenario: Test CSV sample
+  Scenario: Test CSV sample using JSON-Path
 
     Given I am testing CSV parsing
     And some CSV as test:
@@ -41,7 +41,6 @@ Feature: Variables
     And $.[0].who in test should match world
     And $.[1].what in test should match greetings
     And $.[1].who in test should match earthling
-
 
   Scenario: Test set body JSON sample - indirect via variable
 
