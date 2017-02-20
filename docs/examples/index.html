@@ -219,7 +219,7 @@ Scenario: Global Var
 Scenario: Config Test
     Given I am configured
     And I set x &#x3D; ok
-    Then I assert this.targets.default
+    Then variable x should be ok
 </code></pre>
     <a name="vars.feature_2"></a>
     <h4>Scoped Variable</h4>
@@ -245,9 +245,9 @@ Scenario: Test Variable Assignment
     Then variable test should match hello
 </code></pre>
     <a name="vars.feature_5"></a>
-    <h4>Test CSV sample</h4>
+    <h4>Test CSV sample using JSON-Path</h4>
     <pre><code class="gherkin">
-Scenario: Test CSV sample
+Scenario: Test CSV sample using JSON-Path
     Given I am testing CSV parsing
     And some CSV as test:
 what, who
@@ -334,15 +334,15 @@ Scenario: 404
     <a name="webapp.feature_0"></a>
     <h4>Google on Firefox</h4>
     <pre><code class="gherkin">
-@dialect=webapp
 Scenario: Google on Firefox
     Given I use firefox browser
     When I visit /
-    When I type apigeek-architect into q
+    When I type wikipedia into q
     When I click btnG
-    When I wait until page is apigeek-architect - Google Search
+    When I wait until page is linkedin - Google Search
     Then I stop using browser
-    Then dump
+    Then I page body should contain wikipedia
+    Then I page body should not contain the-wrong-page
 </code></pre>
 
 </div>
