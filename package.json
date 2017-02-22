@@ -50,7 +50,7 @@
     "apigeeks": "lib/daemon.js"
   },
   "dependencies": {
-    "meta4qa": "^1.1.19",
+    "meta4qa": "^1.7.10",
     "meta4qa-common": "^1.0.11",
     "meta4qa-blueprint": "^0.2.8",
     "meta4qa-webapi": "^1.0.11",
