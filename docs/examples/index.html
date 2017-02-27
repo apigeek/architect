@@ -280,22 +280,19 @@ Scenario: Test set body JSON sample - indirect via variable
     <a name="web.feature_0"></a>
     <h4>Google - with redirects</h4>
     <pre><code class="gherkin">
-@target=google
 Scenario: Google - with redirects
     Given I am googling
     Given I enable redirects
-    When I GET /
+    When I GET http://google.com
     Then response code should be 200
 </code></pre>
     <a name="web.feature_1"></a>
     <h4>Google - no redirect</h4>
     <pre><code class="gherkin">
-@skip=true
-@target=google
 Scenario: Google - no redirect
     Given I am googling
     Given I disable redirects
-    When I GET /
+    When I GET https://google.com
     Then response code should be 3xx
 </code></pre>
     <a name="web.feature_2"></a>
@@ -306,7 +303,7 @@ Scenario: Google - no redirect
 Scenario: Example.com
     Given I am googling
     Given I am browsing example.com
-    When I GET /
+    When I GET http://example.com
     Then response body should contain Example Domain
 </code></pre>
 
