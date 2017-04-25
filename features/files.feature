@@ -24,8 +24,6 @@ Feature: file handling
     Given I am testing deleting files
     And file bye_bye_world.json exists
     And I load test from bye_bye_world.json
-    And variable test should exist
-    And $.hello in test should match earth
     When I delete file bye_bye_world.json
     Then file bye_bye_world.json does not exist
 
