@@ -1,5 +1,4 @@
 @cookies
-@dialects=webapi
 @skip
 Feature: 404: Page Not Found
 
