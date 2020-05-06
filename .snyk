@@ -1,0 +1,30 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - meta4qa-blueprint > lodash:
+        patched: '2020-05-06T23:24:01.488Z'
+    - meta4qa-common > lodash:
+        patched: '2020-05-06T23:24:01.488Z'
+    - meta4qa > lodash:
+        patched: '2020-05-06T23:24:01.488Z'
+    - meta4qa-blueprint > async > lodash:
+        patched: '2020-05-06T23:24:01.488Z'
+    - meta4qa-common > async > lodash:
+        patched: '2020-05-06T23:24:01.488Z'
+    - meta4qa-webapi > async > lodash:
+        patched: '2020-05-06T23:24:01.488Z'
+    - meta4qa > async > lodash:
+        patched: '2020-05-06T23:24:01.488Z'
+    - meta4qa > meta4qa-blueprint > lodash:
+        patched: '2020-05-06T23:24:01.488Z'
+    - meta4qa > meta4qa-common > lodash:
+        patched: '2020-05-06T23:24:01.488Z'
+    - meta4qa > meta4qa-blueprint > async > lodash:
+        patched: '2020-05-06T23:24:01.488Z'
+    - meta4qa > meta4qa-common > async > lodash:
+        patched: '2020-05-06T23:24:01.488Z'
+    - meta4qa > meta4qa-webapi > async > lodash:
+        patched: '2020-05-06T23:24:01.488Z'
